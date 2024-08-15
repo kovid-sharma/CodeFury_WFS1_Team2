@@ -690,7 +690,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .banner-subtitle {
-  color: var(--salmon-pink);
+  color: var(--sandy-brown);
   font-size: var(--fs-7);
   font-weight: var(--weight-500);
   text-transform: capitalize;
@@ -706,7 +706,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   margin-bottom: 10px;
 }
 
-.banner-text { display: none; }
+.banner-text { display: none;
+color: white; }
 
 .banner-btn {
   background: var(--salmon-pink);
