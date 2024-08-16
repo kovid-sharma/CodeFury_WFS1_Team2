@@ -111,6 +111,12 @@ input {
   font: inherit;
 }
 
+.about-class-text {
+  color: var(--sonic-silver);
+  font-size: var(--fs-9);
+  text-transform: uppercase;
+}
+
 input::-webkit-input-placeholder { font: inherit; }
 
 input::-moz-placeholder { font: inherit; }
