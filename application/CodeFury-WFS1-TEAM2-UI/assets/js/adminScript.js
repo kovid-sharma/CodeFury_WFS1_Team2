@@ -39,3 +39,13 @@ document.getElementById('monthlyBtn').addEventListener('click', function() {
     document.getElementById('dailyContent').classList.remove('active');
     document.getElementById('weeklyContent').classList.remove('active');
 });
+
+
+document.querySelectorAll('.subscription-buttons button').forEach(button => {
+    button.addEventListener('click', function() {
+        document.querySelectorAll('.subscription-buttons button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        this.classList.add('active');
+    });
+});

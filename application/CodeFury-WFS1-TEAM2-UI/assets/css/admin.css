@@ -8,28 +8,33 @@
 .subscription-buttons {
     display: none;
     margin-top: 20px;
-    display: flex; /* Arrange buttons horizontally */
+}
+
+.buttons-div{
+    display: flex;
 }
 
 .subscription-buttons button {
-    margin-right: 10px;
-    padding: 10px 20px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-    color: #333;
+    margin-right: 100px;
+    width: 300px;
+    font-size: 20px;
+    padding: 0.7rem 0.5rem;
+    border-radius: 5rem;
+    background: linear-gradient(45deg, hsl(353, 100%, 78%), hsl(353, 80%, 60%));
+    color: #fff;
+    border: none;
+    outline: none;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 20px;
+    transition: font-weight 0.3s, transform 0.3s;
 }
 
-.subscription-buttons button.selected {
-    background-color: var(--salmon-pink);
-    color: white;
-    border: none;
+.subscription-buttons button.active {
+    font-weight: bolder; /* Makes the text bold when selected */
 }
 
 .subscription-buttons button:hover {
-    background-color: #eee;
+    transform: scale(1.05); /* Grows the button by 5% on hover */
 }
 
 
@@ -59,7 +64,17 @@
     color: white;
 }
 
+.product-scroll-container{
+    height: 500px; /* Adjust this height to fit exactly 5 divs */
+    overflow-y: auto; /* Enables vertical scrolling */
+    border: 1px solid #ccc; /* Optional: for better visibility */
+    padding: 10px;
+    box-sizing: border-box;
+}
 
+.add-to-subsc{
+    margin-top: 10px;
+}
   @media (min-width: 570px){
   .product-minimal .subsc-products { min-width: 50%; }
   }
