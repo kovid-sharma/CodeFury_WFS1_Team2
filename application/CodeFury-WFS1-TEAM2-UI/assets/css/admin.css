@@ -1,0 +1,47 @@
+.product-minimal .subsc-products {
+    min-width: 100%;
+    padding: 0 5px;
+    scroll-snap-align: start;
+  }
+
+/* Styles for the subscription buttons */
+.subscription-buttons {
+    display: none;
+    margin-top: 20px;
+    display: flex; /* Arrange buttons horizontally */
+}
+
+.subscription-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.subscription-buttons button.selected {
+    background-color: var(--salmon-pink);
+    color: white;
+    border: none;
+}
+
+.subscription-buttons button:hover {
+    background-color: #eee;
+}
+
+
+
+
+
+  @media (min-width: 570px){
+  .product-minimal .subsc-products { min-width: 50%; }
+  }
+  @media (min-width: 768px) {
+  .product-minimal .subsc-products { min-width: 100%; }
+  }
+  @media (min-width: 1024px) {
+  .product-minimal .subsc-products { padding: 2px; }
+  }
