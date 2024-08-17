@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev café eCommerce Website</title>
+  <link rel="shortcut icon" href="../assets/images/logo/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/style-prefix.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <ul class="header-social-container">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Shipping</b>
+            This Week Order Over - $55
+          </p>
+        </div>
+
+        <div class="about-class">
+          <a class="about-class-text" href="about.html">About</a>
+        </div>
+          
+    </div>
+
+    <!-- SEARCH Functionality -->
+
+    <!-- <div class="header-main">
+      <div class="container">
+        <a href="#" class="header-logo">
+          <img src="" alt="dev café's logo" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div> -->
+  
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <button id="manageProductsBtn" class="menu-title active">Manage Products</button>
+          </li>
+    
+          <li class="menu-category">
+            <button id="manageSubscriptionBtn" class="menu-title">Manage Subscription</button>
+          </li>
+        
+
+          <li class="menu-category">
+            <a href="../index.html" class="menu-title">Home</a>
+          </li>
+
+          <li class="about-category">
+            <a  href="about.html" class="about-title">About</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div id="product-minimal" class="product-minimal content-div">
+
+            <div class="subscription-buttons">
+              <button id="dailyBtn">Daily</button>
+              <button id="weeklyBtn">Weekly</button>
+              <button id="monthlyBtn">Monthly</button>
+            </div>
+
+
+
+
+            <div id="dailyContent" class="subscription-content content-div">
+              <h2>Daily Subscription Content</h2>
+
+
+              <div class="admin-manage-subscription">
+
+                <h2 class="title">Products-List</h2>
+  
+                  <div class="subsc-products">
+                    <h5>Subsc prod</h2>
+                  </div>
+                  <div class="non-subsc-products">
+                    <h5>non Subsc prod</h2>
+                  </div> 
+  
+                  <div class="activation">
+                    <h5>Activation</h2>
+                    
+                  </div>
+              </div>
+
+
+
+            </div>
+            <div id="weeklyContent" class="subscription-content content-div">
+                <h2>Weekly Subscription Content</h2>
+
+
+                <div class="admin-manage-subscription">
+
+                  <h2 class="title">Products-List</h2>
+    
+                    <div class="subsc-products">
+                      <h5>Subsc prod</h2>
+                    </div>
+                    <div class="non-subsc-products">
+                      <h5>non Subsc prod</h2>
+                    </div> 
+    
+                    <div class="activation">
+                      <h5>Activation</h2>
+                      
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div id="monthlyContent" class="subscription-content content-div">
+                <h2>Monthly Subscription Content</h2>
+
+
+                <div class="admin-manage-subscription">
+
+                  <h2 class="title">Products-List</h2>
+    
+                    <div class="subsc-products">
+                      <h5>Subsc prod</h2>
+                    </div>
+                    <div class="non-subsc-products">
+                      <h5>non Subsc prod</h2>
+                    </div> 
+    
+                    <div class="activation">
+                      <h5>Activation</h2>
+                      
+                    </div>
+                </div>
+
+
+            </div>
+
+           </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div id="product-main" class="product-main content-div active">
+
+            <h2 class="title">Products</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="../assets/images/products/croissant-1.jpg" alt="Croissants" width="300" class="product-img default">
+                  <img src="../assets/images/products/croissant-2.jpg" alt="Croissants" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Bakery</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Croissants</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$8.00</p>
+                    <del>$15.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="../assets/images/products/honey-1.jpg" alt="honey" class="product-img default"
+                    width="300">
+                  <img src="../assets/images/products/honey-2.jpg" alt="honey" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Pantry Staples</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Pure Oragnic Honey</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$15.00</p>
+                    <del>$24.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="../assets/images/products/frozen_pea-1.jpg" alt="Frozen Pea" class="product-img default"
+                    width="300">
+                  <img src="../assets/images/products/frozen_pea-2.jpg" alt="Frozen Pea" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Frozen Vegetables</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Frozen Peas</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$8.00</p>
+                    <del>$15.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="../assets/images/products/bread-1.jpg" alt="bread" class="product-img default"
+                    width="300">
+                  <img src="../assets/images/products/bread-2.jpg" alt="bread" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle pink">new</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Bakery</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Gluten Free Breads</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$5.00</p>
+                    <del>$15.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="../assets/images/products/banana-1.jpg" alt="banana" class="product-img default"
+                    width="300">
+                  <img src="../assets/images/products/banana-2.jpg" alt="banana" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Banana</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Organic Fruits</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$9.00</p>
+                    <del>$15.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="../assets/images/products/boneless_chicken-1.jpg" alt="Chicken" class="product-img default"
+                    width="300">
+                  <img src="../assets/images/products/boneless_chicken-2.jpg" alt="Chicken" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Meat</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Boneless Chicken</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$15.00</p>
+                    <del>$17.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="../assets/images/products/cheese-1.jpg" alt="cheese" class="product-img default"
+                    width="300">
+                  <img src="../assets/images/products/cheese-2.jpg" alt="cheese" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Dairy</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Cheese</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$10.00</p>
+                    <del>$12.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="../assets/images/products/carrot-1.jpg" alt="carrots" class="product-img default"
+                    width="300">
+                  <img src="../assets/images/products/carrot-2.jpg" alt="carrots" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Vegetables</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Carrots</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$15.00</p>
+                    <del>$30.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="../assets/images/products/coffee_beans-1.jpg" alt="coffee Beans" class="product-img default"
+                    width="300">
+                  <img src="../assets/images/products/coffee_beans-2.jpg" alt="Coffee Beans" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Beverages</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Coffee Beans</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$12.00</p>
+                    <del>$25.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="../assets/images/products/lettuce-1.jpg" alt="Lettuce" class="product-img default"
+                    width="300">
+                  <img src="../assets/images/products/lettuce-2.jpg" alt="Lettuce" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Vegetables</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Green Lettuce</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$8.00</p>
+                    <del>$14.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="../assets/images/products/apple-1.jpg" alt="Apple" class="product-img default"
+                    width="300">
+                  <img src="../assets/images/products/apple-2.jpg" alt="Apple" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Fruits</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Organic Apples From kashmir</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$5.00</p>
+                    <del>$15.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="../assets/images/products/broccoli-1.jpg" alt="Broccoli"
+                    class="product-img default" width="300">
+                  <img src="../assets/images/products/broccoli-2.jpg" alt="Broccoli"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Vegetables</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Broccoli</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$8.00</p>
+                    <del>$15.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Brand directory</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Fashion :</h3>
+
+          <a href="#" class="footer-category-link">T-shirt</a>
+          <a href="#" class="footer-category-link">Shirts</a>
+          <a href="#" class="footer-category-link">shorts & jeans</a>
+          <a href="#" class="footer-category-link">jacket</a>
+          <a href="#" class="footer-category-link">dress & frock</a>
+          <a href="#" class="footer-category-link">innerwear</a>
+          <a href="#" class="footer-category-link">hosiery</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">footwear :</h3>
+        
+          <a href="#" class="footer-category-link">sport</a>
+          <a href="#" class="footer-category-link">formal</a>
+          <a href="#" class="footer-category-link">Boots</a>
+          <a href="#" class="footer-category-link">casual</a>
+          <a href="#" class="footer-category-link">cowboy shoes</a>
+          <a href="#" class="footer-category-link">safety shoes</a>
+          <a href="#" class="footer-category-link">Party wear shoes</a>
+          <a href="#" class="footer-category-link">Branded</a>
+          <a href="#" class="footer-category-link">Firstcopy</a>
+          <a href="#" class="footer-category-link">Long shoes</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">jewellery :</h3>
+        
+          <a href="#" class="footer-category-link">Necklace</a>
+          <a href="#" class="footer-category-link">Earrings</a>
+          <a href="#" class="footer-category-link">Couple rings</a>
+          <a href="#" class="footer-category-link">Pendants</a>
+          <a href="#" class="footer-category-link">Crystal</a>
+          <a href="#" class="footer-category-link">Bangles</a>
+          <a href="#" class="footer-category-link">bracelets</a>
+          <a href="#" class="footer-category-link">nosepin</a>
+          <a href="#" class="footer-category-link">chain</a>
+          <a href="#" class="footer-category-link">Earrings</a>
+          <a href="#" class="footer-category-link">Couple rings</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">cosmetics :</h3>
+        
+          <a href="#" class="footer-category-link">Shampoo</a>
+          <a href="#" class="footer-category-link">Bodywash</a>
+          <a href="#" class="footer-category-link">Facewash</a>
+          <a href="#" class="footer-category-link">makeup kit</a>
+          <a href="#" class="footer-category-link">liner</a>
+          <a href="#" class="footer-category-link">lipstick</a>
+          <a href="#" class="footer-category-link">prefume</a>
+          <a href="#" class="footer-category-link">Body soap</a>
+          <a href="#" class="footer-category-link">scrub</a>
+          <a href="#" class="footer-category-link">hair gel</a>
+          <a href="#" class="footer-category-link">hair colors</a>
+          <a href="#" class="footer-category-link">hair dye</a>
+          <a href="#" class="footer-category-link">sunscreen</a>
+          <a href="#" class="footer-category-link">skin loson</a>
+          <a href="#" class="footer-category-link">liner</a>
+          <a href="#" class="footer-category-link">lipstick</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Fashion</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Electronic</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cosmetic</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Health</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Watches</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              419 State 414 Rte
+              Beaver Dams, New York(NY), 14812, USA
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="../assets/images/payment.png" alt="payment method" class="payment-img">
+
+        
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/adminScript.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

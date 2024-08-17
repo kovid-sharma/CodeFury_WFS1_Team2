@@ -668,6 +668,10 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   font-weight: var(--weight-600);
 }
 
+.menu-title.active, .about-title.active {
+  text-decoration: underline;
+}
+
 .menu-close-btn {
   color: var(--eerie-black);
   font-size: 22px;
@@ -3167,6 +3171,14 @@ footer {
   }
 
   .footer-nav { padding-bottom: 50px; }
+
+  .content-div {
+    display: none;
+}
+
+.content-div.active {
+    display: block;
+}
 
 }
 
