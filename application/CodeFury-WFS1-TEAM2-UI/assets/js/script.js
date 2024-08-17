@@ -100,3 +100,51 @@ for (let i = 0; i < accordionBtn.length; i++) {
   });
 
 }
+// signup
+document.getElementById('signup-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const email = document.getElementsByClassName('email-field')[0].value;
+  
+  try {
+    const res = await fetch('http://localhost:5000/signup', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email }) // Send email as an object
+    });
+
+    const data = await res.json(); // Parse the response as JSON
+
+    if (data.st === true) {
+      alert("User created");
+
+    } else {
+      alert("User already exists");
+    }
+  } catch (error) {
+    console.error('Error during signup:', error);
+    alert('An error occurred during signup. Please try again.');
+  }
+});
+
+
+//UI yet to be created
+document.getElementById('login-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const email = document.getElementById('login-email').value;
+  const password = document.getElementById('login-password').value;
+
+  try{
+    const res = await(fetch('http://localhost:5000/login', {
+      method:'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: json.stringify({email, password})
+    }));
+
+    const data = await res.json();
+    //response here. 
+  } catch(errpr) {
+    console.error("login error");
+    alert("login error");
+  }
+})

@@ -111,12 +111,6 @@ input {
   font: inherit;
 }
 
-.about-class-text {
-  color: var(--sonic-silver);
-  font-size: var(--fs-9);
-  text-transform: uppercase;
-}
-
 input::-webkit-input-placeholder { font: inherit; }
 
 input::-moz-placeholder { font: inherit; }
@@ -866,7 +860,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .banner-title {
-  color: var(--eerie-black);
+  color: var(--white);
   font-size: var(--fs-1);
   text-transform: uppercase;
   line-height: 1;
