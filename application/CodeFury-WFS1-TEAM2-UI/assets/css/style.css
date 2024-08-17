@@ -2,9 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 @codewithsadee 
- */
 
 
 
@@ -527,6 +524,51 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   left: 0;
   visibility: visible;
 }
+
+.desktop-navigation-menu .menu-title {
+  font-family: 'YourFontFamily', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Base color */
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.desktop-navigation-menu .menu-title:hover {
+  color: #ff5e6c; /* Hover color, same as "Hot Offers" */
+}
+
+.desktop-navigation-menu .menu-title::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff5e6c; /* Underline color */
+  transition: width 0.3s;
+  margin-top: 5px;
+}
+
+.desktop-navigation-menu .menu-title:hover::after {
+  width: 100%; /* Full-width underline on hover */
+}
+
+.desktop-navigation-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-menu-category-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Adjust the gap between "Blog" and "About" as needed */
+}
+
 
 .menu-top {
   padding-bottom: 15px;
@@ -2227,7 +2269,7 @@ footer {
     padding: 15px 0;
     transition: var(--transition-timing);
   }
-
+  
   .desktop-menu-category-list .menu-category > .menu-title:hover { color: var(--salmon-pink); }
   
   .desktop-menu-category-list .menu-category > .menu-title::after {
@@ -2465,6 +2507,7 @@ footer {
   .blog-card { min-width: calc(33.33% - 20px); }
 
   .blog-title { --fs-5: 1rem; }
+
 
 
 
