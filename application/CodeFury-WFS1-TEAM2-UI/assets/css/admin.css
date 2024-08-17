@@ -33,7 +33,31 @@
 }
 
 
+.add-more-btn {
+    margin-left: 20px;
+    width: 500px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    align-content: center;
+}
 
+.add-product-div {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; 
+}
+
+.add-more-btn:hover {
+    background-color: var(--salmon-pink);
+    color: white;
+}
 
 
   @media (min-width: 570px){
