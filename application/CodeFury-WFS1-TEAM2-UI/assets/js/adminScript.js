@@ -53,19 +53,15 @@ document.querySelectorAll('.subscription-buttons button').forEach(button => {
 
 
 
-const toggleElement = document.querySelector('.toggle');
-const toggleText = toggleElement.querySelector('.toggle-text');
-
-toggleElement.addEventListener('click', () => {
-  toggleElement.classList.add('touched');
-  
-  const isChecked = toggleElement.getAttribute('aria-checked') === 'true';
-  toggleElement.setAttribute('aria-checked', !isChecked);
-  
-  toggleText.textContent = !isChecked ? 'Enable' : 'Disable';
-});
-
-
+function toggleSwitch(buttonElement) {
+    buttonElement.classList.add('touched');
+    const toggleText = buttonElement.querySelector('.toggle-text');
+    
+    const isChecked = buttonElement.getAttribute('aria-checked') === 'true';
+    buttonElement.setAttribute('aria-checked', !isChecked);
+    
+    toggleText.textContent = !isChecked ? 'Enable' : 'Disable';
+};
 
 
 
