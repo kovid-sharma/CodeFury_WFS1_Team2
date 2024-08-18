@@ -849,8 +849,10 @@ footer .copyright {
 #form-details .people div img {
   width: 65px;
   height: 65px;
+  align-items: baseline;
   object-fit: cover;
   margin-right: 15px;
+  border-radius: 50%;
 }
 
 #form-details .people div p {
