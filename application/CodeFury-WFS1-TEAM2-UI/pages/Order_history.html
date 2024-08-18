@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History</title>
+    <link rel="stylesheet" href="../assets/css/Order_history.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img
+                src="D:\HSBC Assignments\CodeFury_WFS1_Team2\application\CodeFury-WFS1-TEAM2-UI\assets\images\logo\logo.svg"
+                class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="..\index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="login.html"><img src="../assets/images/logo/user_logo.png"
+                            height="30" /></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+
+    <section class="py-24 relative">
+        <div >
+           <div class="title_header">
+
+               <h2>Order History</h2>
+               
+               <div class="flex sm:flex-col lg:flex-row sm:items-center justify-between">
+                   <ul class="flex max-sm:flex-col sm:items-center gap-x-14 gap-y-3">
+                       <li class="font-medium text-lg leading-8 cursor-pointer text-indigo-600">All Order</li>
+                       <li class="font-medium text-lg leading-8 cursor-pointer text-black">Summary</li>
+                       <li class="font-medium text-lg leading-8 cursor-pointer text-black">Completed</li>
+                       <li class="font-medium text-lg leading-8 cursor-pointer text-black">Cancelled</li>
+                    </ul>
+                    
+                    
+                </div>
+                
+            </div>
+            <!-- Order Section -->
+            <div class="orders-container">
+                <div class="order-section">
+                    <div class="order-header">
+                        <div class="data">
+                            <p class="font-medium text-lg text-black">Order : #10234987</p>
+                            <p class="font-medium text-lg text-black mt-3">Order Payment : 19th August 2024</p>
+                        </div>
+                        <div class="order-actions">
+                            <button class="show-invoice">Get-Invoice</button>
+                            <button class="buy-now">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="../assets/images/products/toor_dal.jpg" alt="Toor Dal" class="order-image">
+                        <div class="order-details">
+                            <h6 class="item-title">Toor Dal</h6>
+                            <p class="item-author">By: TATA products</p>
+                            <div class="item-info">
+                                <span>One-time Order</span>
+                                <span>Qty: 3</span>
+                                <span class="item-price">Price $20.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-summary">
+                        <div class="status">
+                            <p>Status</p>
+                            <p class="delivered">Out for Delivery</p>
+                        </div>
+                        <div class="expected-delivery">
+                            <p>Delivery Expected by</p>
+                            <p>20rd August 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="order-section">
+                    <div class="order-header">
+                        <div class="data">
+                            <p class="font-medium text-lg text-black">Order : #10345291</p>
+                            <p class="font-medium text-lg text-black mt-3">Subscription Start : 25th March 2024</p>
+                        </div>
+                        <div class="order-actions">
+                            <button class="show-invoice">Get-Invoice</button>
+                            <button class="buy-now">Unsubscribe</button>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="../assets/images/products/banana-1.jpg"
+                            alt="banana" class="order-image">
+                        <div class="order-details">
+                            <h6 class="item-title">Banana</h6>
+                            <p class="item-author">By: TATA fresh</p>
+                            <div class="item-info">
+                                <span>Subscription based order</span>
+                                <span>Qty: 2</span>
+                                <span class="item-price">Price <span class="no-alter">$15.00</span>$8.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-summary">
+                        <div class="status">
+                            <p>Status</p>
+                            <p class="shipped">Shipped</p>
+                        </div>
+                        <div class="expected-delivery">
+                            <p>Delivery Frequency</p>
+                            <p>Biweekly (Monday)</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="order-section">
+                    <div class="order-header">
+                        <div class="data">
+                            <p class="font-medium text-lg text-black">Order : #10347555</p>
+                            <p class="font-medium text-lg text-black mt-3">Subscription Start : 1st May 2024</p>
+                        </div>
+                        <div class="order-actions">
+                            <button class="show-invoice">Get-Invoice</button>
+                            <button class="buy-now">Unsubscribe</button>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="../assets/images/products/boneless_chicken-1.jpg"
+                            alt="Chicken breast" class="order-image">
+                        <div class="order-details">
+                            <h6 class="item-title">Boneless Chicken</h6>
+                            <p class="item-author">By: Freshlys</p>
+                            <div class="item-info">
+                                <span>Subscription based order</span>
+                                <span>Qty: 2</span>
+                                <span class="item-price">Price <span class="no-alter">  $17.00 </span>   $15.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-summary">
+                        <div class="status">
+                            <p>Status</p>
+                            <p class="shipped">Shipped</p>
+                        </div>
+                        <div class="expected-delivery">
+                            <p>Delivery Frequency</p>
+                            <p>Biweekly (Monday)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-section">
+                    <div class="order-header">
+                        <div class="data">
+                            <p class="font-medium text-lg text-black">Order : #10347890</p>
+                            <p class="font-medium text-lg text-black mt-3">Subscription Start : 1st May 2024</p>
+                        </div>
+                        <div class="order-actions">
+                            <button class="show-invoice">Get-Invoice</button>
+                            <button class="buy-now">Unsubscribe</button>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="../assets/images/products/apple-2.jpg"
+                            alt="apple" class="order-image">
+                        <div class="order-details">
+                            <h6 class="item-title">Organic Apples from Kashmir</h6>
+                            <p class="item-author">By: Freshlys</p>
+                            <div class="item-info">
+                                <span>Subscription based order</span>
+                                <span>Qty: 5</span>
+                                <span class="item-price">Price <span class="no-alter">  $15.00 </span>   $5.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-summary">
+                        <div class="status">
+                            <p>Status</p>
+                            <p class="shipped">Shipped</p>
+                        </div>
+                        <div class="expected-delivery">
+                            <p>Delivery Frequency</p>
+                            <p>weekly (Wednesday)</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+                <!-- Add more orders as needed -->
+            </div>
+            <footer class="section-p1">
+                <div class="col">
+                    <img class="logo"
+                        src="D:\HSBC Assignments\CodeFury_WFS1_Team2\application\CodeFury-WFS1-TEAM2-UI\assets\images\logo\logo.svg"
+                        alt="">
+                    <h4>Contact</h4>
+                    <p><strong>Address:</strong> Pune, India - 411036</p>
+                    <p><strong>Phone:</strong> +91 9342304223</p>
+                    <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                    <div class="follow">
+                        <h4>Follow us</h4>
+                        <div class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>About</h4>
+                    <a href="#">About us</a>
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="col">
+                    <h4>My Account</h4>
+                    <a href="#">Sign In</a>
+                    <a href="#">View Cart</a>
+                    <a href="#">My Wishlist</a>
+                    <a href="#">Track My Order</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="col install">
+                    <h4>Install App</h4>
+                    <p>From App Store or Google Play</p>
+                    <div class="row">
+                        <img src="images/pay/app.jpg" alt="">
+                        <img src="images/pay/play.jpg" alt="">
+                    </div>
+                    <p>Secured Payment Gateway</p>
+                    <img src="images/pay/pay.png" alt="">
+                </div>
+                <div class="copyright">
+                    <p>Created By Dev Cafè | All Rights Reserved | &#169; 2024</p>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+
+</html>

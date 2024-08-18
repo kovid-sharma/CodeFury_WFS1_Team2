@@ -49,3 +49,34 @@ document.querySelectorAll('.subscription-buttons button').forEach(button => {
         this.classList.add('active');
     });
 });
+
+
+
+
+function toggleSwitch(buttonElement) {
+    buttonElement.classList.add('touched');
+    const toggleText = buttonElement.querySelector('.toggle-text');
+    
+    const isChecked = buttonElement.getAttribute('aria-checked') === 'true';
+    buttonElement.setAttribute('aria-checked', !isChecked);
+    
+    toggleText.textContent = !isChecked ? 'Enable' : 'Disable';
+};
+
+
+
+
+function toggleActivation(buttonClass, curClass, text) {
+    const activateDeactivateBtn = document.querySelector(`.${curClass}`);
+    const modifyButton = document.querySelector(`.${buttonClass}`);
+  
+    if (modifyButton.disabled) {
+        modifyButton.disabled = false;
+        activateDeactivateBtn.textContent = `${text} Deactivate`;
+        activateDeactivateBtn.classList.remove('deactivated');
+    } else {
+        modifyButton.disabled = true;
+        activateDeactivateBtn.textContent = `${text} Activate`;
+        activateDeactivateBtn.classList.add('deactivated');
+    }
+}
