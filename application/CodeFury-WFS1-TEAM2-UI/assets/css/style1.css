@@ -84,7 +84,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
-  background: #E3E6F3;
+  background: rgb(254, 254, 254);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
   position: sticky;
@@ -113,16 +113,16 @@ body {
 }
 
 #navbar li a:hover,
-#navbar li a.active{
-  color: #088178;
+#navbar li{
+  color: salmon;
 }
 
-#navbar li a.active::after,
+#navbar li a.after,
 #navbar li a:hover::after{
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: salmon;
   position: absolute;
   bottom: -4px;
   left: 20px;
