@@ -167,9 +167,9 @@
 
             <div class="subscription-buttons">
               <div class="buttons-div">
-                <button id="dailyBtn">Daily</button>
-                <button id="weeklyBtn">Weekly</button>
-                <button id="monthlyBtn">Monthly</button>
+                <button id="dailyBtn" class="dailyBtn" >Daily</button>
+                <button id="weeklyBtn" class="weeklyBtn">Weekly</button>
+                <button id="monthlyBtn" class="monthlyBtn">Monthly</button>
               </div>
             </div>
 
@@ -194,20 +194,39 @@
                           </a>
                   
                           <div class="showcase-content">
-                  
-                            <a href="#">
-                              <h4 class="showcase-title">Organic A1 ghee</h4>
-                            </a>
-                  
-                            <a href="#" class="showcase-category">Ghee</a>
-                  
-                            <div class="price-box">
-                              <p class="price">$15.00</p>
-                              <del>$20.00</del>
+                            <div class="content-modify">
+                              <div class="content-left">
+                                <a href="#">
+                                  <h4 class="showcase-title">Organic A1 ghee</h4>
+                                </a>
+                            
+                                <a href="#" class="showcase-category">Ghee</a>
+                            
+                                <div class="price-box">
+                                  <p class="price">$15.00</p>
+                                  <del>$20.00</del>
+                                </div>
+                              </div>
+                            
+                              <div class="content-right">
+                                
+                                <button 
+                                class="toggle"
+                                role="switch"
+                                aria-checked="false"
+                                tabindex="0">
+                                <div class="toggle-circle">
+                                </div>
+                                <div class="toggle-text">Disable</div>
+
+
+                              </button>
+                                
+                              </div>
                             </div>
-                  
                           </div>
-                  
+                          
+
                         </div>
                   
                         <div class="showcase">
@@ -515,15 +534,6 @@
 
                   </div> 
   
-                  <div class="activation">
-                    <h5>Activation</h2>
-
-                      <!-- <div class="switch-button">
-                        <input class="switch-button-checkbox" type="checkbox"></input>
-                        <label class="switch-button-label" for=""><span class="switch-button-label-span">Enable</span></label>
-                      </div> -->
-                    
-                  </div>
 
 
               </div>
@@ -1214,6 +1224,27 @@
                 </div>
             </div>
 
+            <div class="activation">
+              <!-- <h5>Activation</h2> -->
+
+                <!-- <div class="switch-button">
+                  <input class="switch-button-checkbox" type="checkbox"></input>
+                  <label class="switch-button-label" for=""><span class="switch-button-label-span">Enable</span></label>
+                </div> -->
+
+                <!-- <div class="add-product-div">
+                  <button class="add-more-btn" id="addMoreProductBtn">
+                                            Add Product
+                  </button>
+              </div> -->
+              <h3>Activation-Deactivation</h3>
+              <div class="activation-Btns">      
+                <button id="daily-activate-deactivate" onclick="toggleActivation('dailyBtn', 'daily-activate-deactivate', 'Daily ')" class="daily-activate-deactivate act-Btns">Daily Deactivate</button>
+                <button id="weekly-activate-deactivate" onclick="toggleActivation('weeklyBtn', 'weekly-activate-deactivate', 'Weekly ' )" class="weekly-activate-deactivate act-Btns">Weekly Deactivate</button>
+                <button id="monthly-activate-deactivate" onclick="toggleActivation('monthlyBtn', 'monthly-activate-deactivate', 'Monthly ')" class="monthly-activate-deactivate act-Btns">Monthly Deactivate</button>
+              </div>
+
+            </div>
            </div>
 
 

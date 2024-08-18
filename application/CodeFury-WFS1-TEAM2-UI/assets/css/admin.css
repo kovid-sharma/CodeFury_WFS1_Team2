@@ -15,7 +15,7 @@
 }
 
 .subscription-buttons button {
-    margin-right: 100px;
+    margin-right: 10%;
     width: 300px;
     font-size: 20px;
     padding: 0.7rem 0.5rem;
@@ -33,7 +33,13 @@
     font-weight: bolder; /* Makes the text bold when selected */
 }
 
-.subscription-buttons button:hover {
+.subscription-buttons:disabled{
+    background-color: grey;
+    color: #d3d3d3;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.subscription-buttons button:not(:disabled):hover {
     transform: scale(1.05); /* Grows the button by 5% on hover */
 }
 
@@ -75,6 +81,162 @@
 .add-to-subsc{
     margin-top: 10px;
 }
+
+.content-modify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .content-left {
+    flex: 0 0 70%;
+  }
+  
+  .content-right {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+
+
+
+
+
+
+  body:has(.toggle[aria-checked=true]) {
+    background: var(--red);
+  }
+  
+  .toggle {
+    background: rgb(244, 244, 242);
+    border: 0;
+    width: 150px;
+    height: 45px;
+    border-radius: 999px;
+    padding: 4px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .toggle-circle {
+    background: var(--blueToggle);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    will-change: left, transform, background;
+    
+    animation: slideOff 500ms ease 0;
+  }
+  
+  .toggle.touched .toggle-circle {
+    animation-iteration-count: 1;
+  }
+  
+  .toggle[aria-checked=false] .toggle-circle {
+    background: var(--red);
+    left: calc(100% - 4px);
+    transform: translateX(-100%);
+    animation-name: slideOn;
+  }
+  
+
+  .toggle-text {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--textColor, #000);
+
+  }
+
+
+  @keyframes slideOn {
+    0% {
+      background: var(--blueToggle);
+      width: 62px;
+      left: 4px;
+      transform: translateX(0%);
+    }
+    
+    60% {
+      background: var(--blueToggle);
+      width: calc(100% - 8px);
+      left: 4px;
+      transform: translateX(0%);
+    }
+    
+    60.001% {
+      background: var(--blueToggle);
+      width: calc(100% - 8px);
+      left: calc(100% - 4px);
+      transform: translateX(-100%);
+    }
+    
+    100% {
+      background: var(--red);
+      width: 62px;
+      left: calc(100% - 4px);
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes slideOff {  
+    0% {
+      background: var(--red);
+      width: 62px;
+      left: calc(100% - 4px);
+      transform: translateX(-100%);
+    }
+    
+    60% {
+      background: var(--red);
+      width: calc(100% - 8px);
+      left: calc(100% - 4px);
+      transform: translateX(-100%);
+    }
+    
+    60.001% {
+      background: var(--red);
+      width: calc(100% - 8px);
+      left: 4px;
+      transform: translateX(0%);
+    }
+    
+    100% {
+      background: var(--blueToggle);
+      width: 62px;
+      left: 4px;
+      transform: translateX(0%);
+    }
+  }
+
+
+  .act-Btns {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: var(--salmon-pink);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .daily-activate-deactivate.deactivated,
+  .weekly-activate-deactivate.deactivated,
+  .monthly-activate-deactivate.deactivated
+  {
+    background-color: grey;
+  }
+
+  .activation-Btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    background-color:var(--eerie-black);
+  }
   @media (min-width: 570px){
   .product-minimal .subsc-products { min-width: 50%; }
   }

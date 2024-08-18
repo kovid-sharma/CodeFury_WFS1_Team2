@@ -31,7 +31,8 @@
   --cultured: hsl(0, 0%, 93%);
   --white: hsl(0, 100%, 100%);
   --onyx: hsl(0, 0%, 27%);
-
+  --red: #FC7F80;
+  --blueToggle: #7f92ba;
   /**
    * typography
    */
