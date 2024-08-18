@@ -12,11 +12,12 @@
 
 .buttons-div{
     display: flex;
+    justify-content: space-between;
 }
 
 .subscription-buttons button {
-    margin-right: 10%;
-    width: 300px;
+    /* margin-right: 10%; */
+    width: 250px;
     font-size: 20px;
     padding: 0.7rem 0.5rem;
     border-radius: 5rem;
@@ -213,7 +214,9 @@
     }
   }
 
-
+.activation{
+    margin-top: 100px;
+}
   .act-Btns {
     padding: 10px 20px;
     margin-left: 10px;
