@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order History</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    
+    <!-- custom css file link -->
     <link rel="stylesheet" href="../assets/css/Order_history.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../assets/css/style1.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <section id="header">
-        <a href="#"><img
-                src="D:\HSBC Assignments\CodeFury_WFS1_Team2\application\CodeFury-WFS1-TEAM2-UI\assets\images\logo\logo.svg"
-                class="logo" alt=""></a>
+        <a href="#"><img src="../assets/img/logo.png" class="logo" alt=""></a>
         <div>
             <ul id="navbar">
                 <li><a href="..\index.html">Home</a></li>
@@ -22,8 +25,7 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a class="active" href="login.html"><img src="../assets/images/logo/user_logo.png"
-                            height="30" /></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
@@ -35,23 +37,24 @@
 
 
 
-    <section class="py-24 relative">
-        <div >
-           <div class="title_header">
 
-               <h2>Order History</h2>
-               
-               <div class="flex sm:flex-col lg:flex-row sm:items-center justify-between">
-                   <ul class="flex max-sm:flex-col sm:items-center gap-x-14 gap-y-3">
-                       <li class="font-medium text-lg leading-8 cursor-pointer text-indigo-600">All Order</li>
-                       <li class="font-medium text-lg leading-8 cursor-pointer text-black">Summary</li>
-                       <li class="font-medium text-lg leading-8 cursor-pointer text-black">Completed</li>
-                       <li class="font-medium text-lg leading-8 cursor-pointer text-black">Cancelled</li>
+    <section class="py-24 relative">
+        <div>
+            <div class="title_header">
+
+                <h2>Order History</h2>
+
+                <div class="flex sm:flex-col lg:flex-row sm:items-center justify-between">
+                    <ul class="flex max-sm:flex-col sm:items-center gap-x-14 gap-y-3">
+                        <li class="font-medium text-lg leading-8 cursor-pointer text-indigo-600">All Order</li>
+                        <li class="font-medium text-lg leading-8 cursor-pointer text-black">Summary</li>
+                        <li class="font-medium text-lg leading-8 cursor-pointer text-black">Completed</li>
+                        <li class="font-medium text-lg leading-8 cursor-pointer text-black">Cancelled</li>
                     </ul>
-                    
-                    
+
+
                 </div>
-                
+
             </div>
             <!-- Order Section -->
             <div class="orders-container">
@@ -103,8 +106,7 @@
                         </div>
                     </div>
                     <div class="order-item">
-                        <img src="../assets/images/products/banana-1.jpg"
-                            alt="banana" class="order-image">
+                        <img src="../assets/images/products/banana-1.jpg" alt="banana" class="order-image">
                         <div class="order-details">
                             <h6 class="item-title">Banana</h6>
                             <p class="item-author">By: TATA fresh</p>
@@ -140,15 +142,15 @@
                         </div>
                     </div>
                     <div class="order-item">
-                        <img src="../assets/images/products/boneless_chicken-1.jpg"
-                            alt="Chicken breast" class="order-image">
+                        <img src="../assets/images/products/boneless_chicken-1.jpg" alt="Chicken breast"
+                            class="order-image">
                         <div class="order-details">
                             <h6 class="item-title">Boneless Chicken</h6>
                             <p class="item-author">By: Freshlys</p>
                             <div class="item-info">
                                 <span>Subscription based order</span>
                                 <span>Qty: 2</span>
-                                <span class="item-price">Price <span class="no-alter">  $17.00 </span>   $15.00</span>
+                                <span class="item-price">Price <span class="no-alter"> $17.00 </span> $15.00</span>
                             </div>
                         </div>
                     </div>
@@ -176,15 +178,14 @@
                         </div>
                     </div>
                     <div class="order-item">
-                        <img src="../assets/images/products/apple-2.jpg"
-                            alt="apple" class="order-image">
+                        <img src="../assets/images/products/apple-2.jpg" alt="apple" class="order-image">
                         <div class="order-details">
                             <h6 class="item-title">Organic Apples from Kashmir</h6>
                             <p class="item-author">By: Freshlys</p>
                             <div class="item-info">
                                 <span>Subscription based order</span>
                                 <span>Qty: 5</span>
-                                <span class="item-price">Price <span class="no-alter">  $15.00 </span>   $5.00</span>
+                                <span class="item-price">Price <span class="no-alter"> $15.00 </span> $5.00</span>
                             </div>
                         </div>
                     </div>
@@ -201,18 +202,16 @@
                 </div>
 
 
-                
+
 
                 <!-- Add more orders as needed -->
             </div>
             <footer class="section-p1">
                 <div class="col">
-                    <img class="logo"
-                        src="D:\HSBC Assignments\CodeFury_WFS1_Team2\application\CodeFury-WFS1-TEAM2-UI\assets\images\logo\logo.svg"
-                        alt="">
+                    <img class="logo" src="../assets/img/logo.png" alt="">
                     <h4>Contact</h4>
-                    <p><strong>Address:</strong> Pune, India - 411036</p>
-                    <p><strong>Phone:</strong> +91 9342304223</p>
+                    <p><strong>Address:</strong> 562 Keshav Nagar, Street 32, Pune, 411001</p>
+                    <p><strong>Phone:</strong> +91 92222 345 / (+91) 0 123 456 789</p>
                     <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
                     <div class="follow">
                         <h4>Follow us</h4>
@@ -245,16 +244,17 @@
                     <h4>Install App</h4>
                     <p>From App Store or Google Play</p>
                     <div class="row">
-                        <img src="images/pay/app.jpg" alt="">
-                        <img src="images/pay/play.jpg" alt="">
+                        <img src="../assets/img/pay/app.jpg" alt="">
+                        <img src="../assets/img/pay/play.jpg" alt="">
                     </div>
                     <p>Secured Payment Gateway</p>
-                    <img src="images/pay/pay.png" alt="">
-                </div>
-                <div class="copyright">
-                    <p>Created By Dev Cafè | All Rights Reserved | &#169; 2024</p>
-                </div>
+                    <img src=" ../assets/img/pay/pay.png" alt="">
+                    </div>
+                    <div class="copyright">
+                        <p>Created By Dev Cafè | All Rights Reserved | &#169; 2024</p>
+                    </div>
             </footer>
+
         </div>
     </section>
 </body>

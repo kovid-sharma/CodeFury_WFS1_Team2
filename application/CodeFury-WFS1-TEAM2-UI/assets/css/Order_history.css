@@ -74,7 +74,7 @@ body {
 
 #navbar li {
     list-style: none;
-    padding: 0 20px;
+    
     position: relative
 }
 
@@ -447,7 +447,7 @@ h2 {
 ul {
     list-style-type: none;
     display: flex;
-    gap: 2rem;
+    /* gap: 2rem; */
     padding: 5px;
     margin: 15px;
     flex-direction: row
@@ -530,13 +530,13 @@ li:hover {
 }
 
 .buy-now {
-    background-color: #4f46e5;
+    background-color: rgb(253, 158, 149);
     color: #fff;
     border-color: transparent
 }
 
 .buy-now:hover {
-    background-color: #4338ca
+    background-color: salmon
 }
 
 .order-item {
@@ -642,10 +642,5 @@ li:hover {
     text-decoration: none;
     text-decoration:line-through;
     
-    margin: 2px ;
-}
-
-.title_header {
-    padding: 2px;
-    background-color: rgb(255, 236, 248);
+    
 }
