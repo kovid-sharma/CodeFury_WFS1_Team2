@@ -444,14 +444,27 @@ h2 {
     margin: 10px
 }
 
+
+
 ul {
     list-style-type: none;
     display: flex;
-    /* gap: 2rem; */
+    gap: 2rem;
     padding: 5px;
     margin: 15px;
     flex-direction: row
 }
+
+#navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 0rem;
+    padding: 5px;
+    margin: 15px;
+    flex-direction: row
+}
+
+
 
 li {
     cursor: pointer;
