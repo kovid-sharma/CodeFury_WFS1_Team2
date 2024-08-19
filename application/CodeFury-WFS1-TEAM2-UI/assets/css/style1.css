@@ -938,6 +938,15 @@ footer .copyright {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+#cart-add button {
+  background-color: salmon;
+  color: #fff;
+  white-space: nowrap;
+  margin: 1px;
+  padding: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
 #coupon {
   width: 50%;
