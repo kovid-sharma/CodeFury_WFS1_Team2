@@ -15,15 +15,16 @@ import java.util.Map;
 public class UserStorage {
     // method to add a user
     public void addUser(User user) {
-        String sql = "INSERT INTO users (id, username, password, userType) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO users VALUES (?, ?, ?, ?,?)";
 
         try (Connection connection = DatabaseConnection.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
             preparedStatement.setString(1, user.getUserId());
             preparedStatement.setString(2, user.getUserName());
-            preparedStatement.setString(3, user.getPassword());
-            preparedStatement.setString(4, user.getUserType());
+            preparedStatement.setString(3, user.getEmail());
+            preparedStatement.setString(4, user.getPassword());
+            preparedStatement.setString(5, user.getUserType());
 
             preparedStatement.executeUpdate();
 
@@ -41,10 +42,10 @@ public class UserStorage {
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
             preparedStatement.setString(1, user.getUserName());
-            preparedStatement.setString(1, user.getEmail());
-            preparedStatement.setString(2, user.getPassword());
-            preparedStatement.setString(3, user.getUserType());
-            preparedStatement.setString(4, user.getUserId());
+            preparedStatement.setString(2, user.getEmail());
+            preparedStatement.setString(3, user.getPassword());
+            preparedStatement.setString(4, user.getUserType());
+            preparedStatement.setString(5, user.getUserId());
 
             int rowsAffected = preparedStatement.executeUpdate();
             if (rowsAffected == 0) {
@@ -93,7 +94,8 @@ public class UserStorage {
                         resultSet.getString("username"),
                         resultSet.getString("email"),
                         resultSet.getString("password"),
-                        resultSet.getString("user_type")
+                        resultSet.getString("user_type"),
+                        resultSet.getString("created_at")
                 );
             } else {
                 throw new UserNotFoundException("User not found with ID: " + userId);
@@ -121,7 +123,8 @@ public class UserStorage {
                         resultSet.getString("email"),
                         resultSet.getString("username"),
                         resultSet.getString("password"),
-                        resultSet.getString("user_type")
+                        resultSet.getString("user_type"),
+                        resultSet.getString("created_at")
                 );
                 users.add(user);
             }

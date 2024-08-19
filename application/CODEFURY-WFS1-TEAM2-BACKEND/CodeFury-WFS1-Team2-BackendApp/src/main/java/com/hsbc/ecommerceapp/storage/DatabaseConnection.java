@@ -9,7 +9,7 @@ public class DatabaseConnection {
     // method for connecting to database
     public static Connection getConnection() {
         try {
-            return DriverManager.getConnection("jdbc:mysql://localhost/hsbcdb", "root", "Mysql@2024");
+            return DriverManager.getConnection("jdbc:mysql://localhost/hsbcdb", "root", "hksharsh11");
         }
         catch (SQLException e) {
             System.out.println(e.getMessage());

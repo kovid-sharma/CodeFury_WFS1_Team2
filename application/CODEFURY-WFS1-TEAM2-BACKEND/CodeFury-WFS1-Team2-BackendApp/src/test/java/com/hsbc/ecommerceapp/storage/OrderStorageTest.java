@@ -18,7 +18,7 @@ public class OrderStorageTest {
     @BeforeEach
     public void setup() {
         orderStorage = new OrderStorage();
-        order = new Order("Order1", "Customer1", 100.5, "delivered");
+        order = new Order("Order1", "Customer1", 100.5, "22-08-2024","Delivered");
     }
 
     @Test
@@ -33,9 +33,8 @@ public class OrderStorageTest {
 
     @Test
     public void testGetOrderByCustomerId() {
-        Order order1 = new Order("Order1", "Customer1", 100.5, "delivered");
-        Order order2 = new Order("Order2", "Customer2", 200.5, "delivered");
-
+        Order order1 = new Order("Order1", "Customer1", 100.5, "22-08-2024","Delivered");
+        Order order2 = new Order("Order2", "Customer2", 100.5, "22-08-2024","Delivered");
         orderStorage.addOrder("Customer1", order1);
         orderStorage.addOrder("Customer1", order2);
 
