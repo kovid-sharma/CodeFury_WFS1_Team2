@@ -31,8 +31,8 @@ public class CustomerServiceImplTest {
         subscriptionService = mock(SubscriptionService.class);
         orderStorage = mock(OrderStorage.class);
         customerService = new CustomerServiceImpl(subscriptionService, orderStorage);
-        user = new User("User1", "john_wick", "password123", "john@wick.com", "customer");
-        order = new Order("Order1", "Customer1", 100.5, "delivered");
+        user = new User("User1", "john_wick", "password123", "john@wick.com", "customer","22-08-2024");
+        order = new Order("Order1", "Customer1", 100.5, "22-08-2024","Delivered");
     }
 
     @Test

@@ -19,7 +19,7 @@ public class UserServiceImplTest {
     public static void setup() {
         userStorage = new UserStorage();
         userService = new UserServiceImpl(userStorage);
-        user = new User("User1", "john_wick", "password123", "john@wick.com", "customer");
+        user = new User("User1", "john_wick", "password123", "john@wick.com", "customer","22-08-2024");
     }
 
     // testing register new user

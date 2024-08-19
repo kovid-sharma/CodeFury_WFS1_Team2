@@ -14,7 +14,7 @@ public class UserStorageTest {
     @BeforeEach
     public void setup() {
         userStorage = new UserStorage();
-        user = new User("User1", "john_wick", "john@123", "user1@example.com", "customer");
+        user = new User("User1", "john_wick", "user1@example.com", "john@123", "customer","22-08-2024");
     }
 
     @Test

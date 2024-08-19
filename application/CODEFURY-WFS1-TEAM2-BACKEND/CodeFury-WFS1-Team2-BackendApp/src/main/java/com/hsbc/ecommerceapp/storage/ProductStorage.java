@@ -38,10 +38,10 @@ public class ProductStorage {
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
             preparedStatement.setString(1, product.getProductName());
-            preparedStatement.setString(1, product.getProductDescription());
-            preparedStatement.setDouble(2, product.getPrice());
-            preparedStatement.setBoolean(3, product.isActive());
-            preparedStatement.setString(4, product.getProductId());
+            preparedStatement.setString(2, product.getProductDescription());
+            preparedStatement.setDouble(3, product.getPrice());
+            preparedStatement.setBoolean(4, product.isActive());
+            preparedStatement.setString(5, product.getProductId());
 
             int rowsAffected = preparedStatement.executeUpdate();
             if (rowsAffected == 0)

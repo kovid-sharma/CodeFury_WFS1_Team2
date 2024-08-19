@@ -3,18 +3,27 @@ package com.hsbc.ecommerceapp.model;
 import java.util.Objects;
 
 public class User {
-    protected String userId, userName, password, email, userType;
+    protected String userId, userName, password, email, userType,created_at;
 
     public void setUserType(String userType) {
         this.userType = userType;
     }
 
-    public User(String userId, String userName, String password, String email, String userType) {
+    public User(String userId, String userName, String email, String password, String userType,String created_at) {
         this.userId = userId;
         this.userName = userName;
         this.password = password;
         this.email = email;
         this.userType = userType;
+        this.created_at = created_at;
+    }
+
+    public String getCreated_at() {
+        return created_at;
+    }
+
+    public void setCreated_at(String created_at) {
+        this.created_at = created_at;
     }
 
     public String getUserId() {

@@ -31,7 +31,7 @@ public class AdminServiceImplTest {
 //        adminService = new AdminServiceImpl(productStorage);
         adminService = new AdminServiceImpl(productService, subscriptionService);
 
-        user = user = new User("User1", "john_wick", "password123", "john@wick.com", "customer");
+        user = user = new User("User1", "john_wick", "password123", "john@wick.com", "customer","22-08-2024");
     }
 
     @Test

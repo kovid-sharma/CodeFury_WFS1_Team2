@@ -3,8 +3,8 @@ package com.hsbc.ecommerceapp.model;
 public class Admin extends User {
     private String adminRole;
 
-    public Admin(String userId, String userName, String password, String email, String userType) {
-        super(userId, userName, password, email, userType);
+    public Admin(String userId, String userName, String password, String email, String userType, String created_at) {
+        super(userId, userName, password, email, userType, created_at);
     }
 
     public String getAdminRole() {

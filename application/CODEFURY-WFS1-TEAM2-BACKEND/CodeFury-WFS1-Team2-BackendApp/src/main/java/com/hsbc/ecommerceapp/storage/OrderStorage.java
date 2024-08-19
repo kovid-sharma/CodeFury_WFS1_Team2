@@ -12,7 +12,7 @@ import java.util.List;
 public class OrderStorage {
     // method to add new order
     public void addOrder(String customerId, Order order) {
-        String sql = "INSERT INTO orders (order_id, customerId, total_amount, status) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO orders (order_id, customerId, total_amount, order_date,status) VALUES (?, ?, ?, ?, ?)";
 
         try (Connection connection = DatabaseConnection.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
@@ -20,7 +20,8 @@ public class OrderStorage {
             preparedStatement.setString(1, order.getOrderId());
             preparedStatement.setString(2, customerId);
             preparedStatement.setDouble(3, order.getTotalAmount());
-            preparedStatement.setString(4, order.getStatus());
+            preparedStatement.setString(4, order.getOrder_date());
+            preparedStatement.setString(5, order.getStatus());
 
             preparedStatement.executeUpdate();
 
@@ -86,6 +87,7 @@ public class OrderStorage {
                         resultSet.getString("order_id"),
                         resultSet.getString("user_id"),
                         resultSet.getDouble("total_amount"),
+                        resultSet.getString("order_date"),
                         resultSet.getString("status")
                 );
             } else {
@@ -114,6 +116,7 @@ public class OrderStorage {
                             resultSet.getString("order_id"),
                             resultSet.getString("user_id"),
                             resultSet.getDouble("total_amount"),
+                            resultSet.getString("order_date"),
                             resultSet.getString("status")
                     );
                     orderList.add(order);
