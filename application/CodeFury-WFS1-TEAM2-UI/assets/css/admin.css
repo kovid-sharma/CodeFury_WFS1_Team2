@@ -34,7 +34,7 @@
     font-weight: bolder; /* Makes the text bold when selected */
 }
 
-.subscription-buttons:disabled{
+.subscription-buttons button:disabled{
     background-color: grey;
     color: #d3d3d3;
     cursor: not-allowed;
@@ -98,16 +98,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-
-
-
-
-
-
-
-  body:has(.toggle[aria-checked=true]) {
-    background: var(--red);
   }
   
   .toggle {
