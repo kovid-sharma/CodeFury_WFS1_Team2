@@ -86,10 +86,6 @@ body {
     transition: .3s ease
 }
 
-#navbar li a.active,
-#navbar li a:hover {
-    color: #088178
-}
 
 #mobile {
     display: none;
