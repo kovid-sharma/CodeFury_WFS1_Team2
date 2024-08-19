@@ -9,7 +9,7 @@ import java.util.List;
 
 public class SubscriptionStorage {
     public void addSubscription(Subscription subscription) {
-        String sql = "INSERT INTO subscriptions (subscriptionId, productId, userId, startDate, endDate, isActive) VALUES (?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO subscriptions (subscriptionId, productId, customerId, startDate, endDate, isActive) VALUES (?, ?, ?, ?, ?, ?)";
 
         try (Connection connection = DatabaseConnection.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
@@ -55,7 +55,7 @@ public class SubscriptionStorage {
 //        if(subscription != null)
 //            subscription.setActive(false);
 
-        String sql = "DELETE FROM subscriptions WHERE id = ?";
+        String sql = "DELETE FROM subscriptions WHERE subscriptionId  = ?";
 
         try (Connection connection = DatabaseConnection.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {

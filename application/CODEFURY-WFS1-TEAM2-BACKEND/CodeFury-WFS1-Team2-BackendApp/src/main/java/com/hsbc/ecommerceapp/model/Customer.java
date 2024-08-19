@@ -3,8 +3,8 @@ package com.hsbc.ecommerceapp.model;
 public class Customer extends User {
     private String address, phoneNumber;
 
-    public Customer(String userId, String userName, String password, String email, String userType, String created_at) {
-        super(userId, userName, password, email, userType, created_at);
+    public Customer(String user_id, String username, String email, String password, String user_type, String created_at) {
+        super(user_id, username, email, password, user_type, created_at);
     }
 
     public String getAddress() {

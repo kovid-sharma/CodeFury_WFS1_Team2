@@ -28,7 +28,7 @@ public class UserServiceImplTest {
         userService.registerUser(user);
         User fetchedUser = userStorage.getUserById("User1");
         assertNotNull(fetchedUser);
-        assertEquals("john_wick", fetchedUser.getUserName());
+        assertEquals("john_wick", fetchedUser.getUsername());
     }
 
     // testing user login
@@ -37,7 +37,7 @@ public class UserServiceImplTest {
         userService.registerUser(user);
         User loggedInUser = userService.loginUser("john_wick", "password123");
         assertNotNull(loggedInUser);
-        assertEquals("john_wick", loggedInUser.getUserName());
+        assertEquals("john_wick", loggedInUser.getUsername());
     }
 
     // testing update user

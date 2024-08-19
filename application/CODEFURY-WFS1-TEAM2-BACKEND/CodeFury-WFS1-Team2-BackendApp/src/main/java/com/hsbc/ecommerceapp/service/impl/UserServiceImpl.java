@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
     // overriding add user
     @Override
     public void registerUser(User user) {
-        if (user == null || user.getUserName() == null || user.getPassword() == null)
+        if (user == null || user.getUsername() == null || user.getPassword() == null)
             throw new InvalidInputException("Invalid user data");
         userStorage.addUser(user);
     }
@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
     // overriding update user
     @Override
     public void updateUser(User user) {
-        if (userStorage.getUserById(user.getUserId()) == null)
+        if (userStorage.getUserById(user.getUser_id()) == null)
             throw new UserNotFoundException("User not found!");
         userStorage.updateUser(user);
     }

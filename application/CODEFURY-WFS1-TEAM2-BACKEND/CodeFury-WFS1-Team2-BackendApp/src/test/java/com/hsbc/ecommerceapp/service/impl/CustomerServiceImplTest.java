@@ -8,8 +8,6 @@ import com.hsbc.ecommerceapp.service.SubscriptionService;
 import com.hsbc.ecommerceapp.storage.OrderStorage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
-import org.mockito.internal.matchers.Or;
 
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -42,7 +40,7 @@ public class CustomerServiceImplTest {
         customerService.placeOrder(user, order);
 
         verify(subscriptionService).addSubscription(subscription);
-        verify(orderStorage).addOrder(user.getUserId(), order);
+        verify(orderStorage).addOrder(user.getUser_id(), order);
     }
 
     @Test

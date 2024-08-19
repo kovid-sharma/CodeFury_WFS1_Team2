@@ -2,8 +2,6 @@ package com.hsbc.ecommerceapp.storage;
 
 import com.hsbc.ecommerceapp.exceptions.OrderNotFoundException;
 import com.hsbc.ecommerceapp.model.Order;
-import com.hsbc.ecommerceapp.model.Product;
-import com.hsbc.ecommerceapp.service.CustomerService;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -12,14 +10,14 @@ import java.util.List;
 public class OrderStorage {
     // method to add new order
     public void addOrder(String customerId, Order order) {
-        String sql = "INSERT INTO orders (order_id, customerId, total_amount, order_date,status) VALUES (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO orders (order_id, user_id, total_amount, order_date,status) VALUES (?, ?, ?, ?, ?)";
 
         try (Connection connection = DatabaseConnection.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
-            preparedStatement.setString(1, order.getOrderId());
-            preparedStatement.setString(2, customerId);
-            preparedStatement.setDouble(3, order.getTotalAmount());
+            preparedStatement.setString(1, order.getOrder_id());
+            preparedStatement.setString(2, order.getUser_id());
+            preparedStatement.setDouble(3, order.getTotal_amount());
             preparedStatement.setString(4, order.getOrder_date());
             preparedStatement.setString(5, order.getStatus());
 
@@ -37,10 +35,10 @@ public class OrderStorage {
         try (Connection connection = DatabaseConnection.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
-            preparedStatement.setString(1, customerId);
-            preparedStatement.setDouble(2, order.getTotalAmount());
+            preparedStatement.setString(1, order.getUser_id());
+            preparedStatement.setDouble(2, order.getTotal_amount());
             preparedStatement.setString(3, order.getStatus());
-            preparedStatement.setString(4, order.getOrderId());
+            preparedStatement.setString(4, order.getOrder_id());
 
             int rowsAffected = preparedStatement.executeUpdate();
             if (rowsAffected == 0) {
@@ -73,7 +71,7 @@ public class OrderStorage {
 
     // method to get an order by id
     public Order getOrderById(String orderId) throws OrderNotFoundException {
-        String sql = "SELECT * FROM orders WHERE id = ?";
+        String sql = "SELECT * FROM orders WHERE user_id = ?";
         Order order = null;
 
         try (Connection connection = DatabaseConnection.getConnection();

@@ -1,11 +1,9 @@
 package com.hsbc.ecommerceapp.model;
 
-import java.time.LocalDate;
-
 public class Order {
-    private String orderId;
-    private String customerId;
-    private Double totalAmount;
+    private String order_id;
+    private String user_id;
+    private Double total_amount;
     private String order_date;
     private String status;
 
@@ -18,37 +16,37 @@ public class Order {
     }
 
     // Constructor
-    public Order(String orderId, String customerId, Double totalAmount, String order_date,String status) {
-        this.orderId = orderId;
-        this.customerId = customerId;
-        this.totalAmount = totalAmount;
+    public Order(String order_id, String user_id, Double total_amount, String order_date, String status) {
+        this.order_id = order_id;
+        this.user_id = user_id;
+        this.total_amount = total_amount;
         this.order_date = order_date;
         this.status = status;
     }
 
     // Getters and Setters
-    public String getOrderId() {
-        return orderId;
+    public String getOrder_id() {
+        return order_id;
     }
 
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
+    public void setOrder_id(String order_id) {
+        this.order_id = order_id;
     }
 
-    public String getCustomerId() {
-        return customerId;
+    public String getUser_id() {
+        return user_id;
     }
 
-    public void setCustomerId(String customerId) {
-        this.customerId = customerId;
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 
-    public Double getTotalAmount() {
-        return totalAmount;
+    public Double getTotal_amount() {
+        return total_amount;
     }
 
-    public void setTotalAmount(Double totalAmount) {
-        this.totalAmount = totalAmount;
+    public void setTotal_amount(Double total_amount) {
+        this.total_amount = total_amount;
     }
 
     public String getStatus() {
@@ -64,9 +62,9 @@ public class Order {
     @Override
     public String toString() {
         return "Order{" +
-                "orderId='" + orderId + '\'' +
-                ", customerId='" + customerId + '\'' +
-                ", totalAmount=" + totalAmount +
+                "orderId='" + order_id + '\'' +
+                ", customerId='" + user_id + '\'' +
+                ", totalAmount=" + total_amount +
                 ", order_date='" + order_date + '\'' +
                 ", status='" + status + '\'' +
                 '}';

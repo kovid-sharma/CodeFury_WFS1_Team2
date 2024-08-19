@@ -8,9 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class UserStorage {
     // method to add a user
@@ -20,11 +18,11 @@ public class UserStorage {
         try (Connection connection = DatabaseConnection.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
-            preparedStatement.setString(1, user.getUserId());
-            preparedStatement.setString(2, user.getUserName());
+            preparedStatement.setString(1, user.getUser_id());
+            preparedStatement.setString(2, user.getUsername());
             preparedStatement.setString(3, user.getEmail());
             preparedStatement.setString(4, user.getPassword());
-            preparedStatement.setString(5, user.getUserType());
+            preparedStatement.setString(5, user.getUser_type());
 
             preparedStatement.executeUpdate();
 
@@ -41,11 +39,11 @@ public class UserStorage {
         try (Connection connection = DatabaseConnection.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
-            preparedStatement.setString(1, user.getUserName());
+            preparedStatement.setString(1, user.getUsername());
             preparedStatement.setString(2, user.getEmail());
             preparedStatement.setString(3, user.getPassword());
-            preparedStatement.setString(4, user.getUserType());
-            preparedStatement.setString(5, user.getUserId());
+            preparedStatement.setString(4, user.getUser_type());
+            preparedStatement.setString(5, user.getUser_id());
 
             int rowsAffected = preparedStatement.executeUpdate();
             if (rowsAffected == 0) {

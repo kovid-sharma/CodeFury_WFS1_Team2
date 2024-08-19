@@ -28,7 +28,7 @@ public class CustomerServiceImpl implements CustomerService {
     public void placeOrder(User user, Order order) {
         if(user.isAdmin())
             throw new SecurityException(("User not a customer!"));
-        orderStorage.addOrder(user.getUserId(), order);
+        orderStorage.addOrder(user.getUser_id(), order);
     }
 
     // overriding cancel order
@@ -49,7 +49,7 @@ public class CustomerServiceImpl implements CustomerService {
         Customer existingCustomer = (Customer) userStorage.getUserById(customerId);
 
         // update existing customer's details with new information
-        existingCustomer.setUserName(updatedCustomer.getUserName());
+        existingCustomer.setUsername(updatedCustomer.getUsername());
         existingCustomer.setEmail(updatedCustomer.getEmail());
         existingCustomer.setAddress(updatedCustomer.getAddress());
         existingCustomer.setPhoneNumber(updatedCustomer.getPhoneNumber());
