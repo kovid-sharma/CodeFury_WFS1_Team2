@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dev Café About</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/icon1.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../assets/css/style1.css">
+    </head>
+<body class="profile-page">
+    <section id="header">
+        <a href="#"><img src="../assets/img/logo.png" class="logo" alt=""></a>
+        
+
+        <div>
+            <ul id="navbar">
+                <li><a href="..\index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="Order_history.html"><i class='far fa-clock' ></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class='far fa-shopping-bag'></i></a></li>
+               
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="pages/cart.html"><i class='bx bx-shopping-bag' ></i></a>
+            <i id="bar" class='bx bx-menu'></i>
+        </div>
+    </section>
+
+    <div class="profile-container">
+        <div class="profile-leftbox">
+            <nav class="profile-tabs">
+                <a onclick="tabs(0)" class="profile-tab active">
+                    <i class="fas fa-user"></i> Personal Information
+                </a>
+                <a onclick="tabs(1)" class="profile-tab">
+                    <i class="far fa-credit-card"></i> Shipment Information
+                </a>
+                <a onclick="tabs(2)" class="profile-tab">
+                    <i class="fas fa-tv"></i> Subscription Information
+                </a>
+                <a onclick="tabs(3)" class="profile-tab">
+                    <i class="fas fa-tasks"></i> Privacy Settings
+                </a>
+                <a onclick="tabs(4)" class="profile-tab">
+                    <i class="fas fa-cog"></i> Account Settings
+                </a>
+            </nav>
+        </div>
+        <div class="profile-rightbox">
+            <div class="profile-content profile-personal-info tabShow">
+                <h1>Personal Information</h1>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="profile-input" value="Dheeraj Sharma">
+                    <label for="gender">Gender</label>
+                    <input type="text" id="gender" class="profile-input" value="Male">
+                    <label for="birthday">Birthday</label>
+                    <input type="text" id="birthday" class="profile-input" value="August 26, 1990">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="profile-input" value="dheerajsharma@gmail.com">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="profile-input">
+                    <button class="profile-btn">Update</button>
+                </form>
+            </div>
+            <div class="profile-content profile-shipment-info tabShow">
+                <h1>Shipment Information</h1>
+                <form>
+                    <label for="billing-address">Billing Address</label>
+                    <input type="text" id="billing-address" class="profile-input" placeholder="402, Sector 19, Noida, Uttar Pradesh">
+                    <label for="pincode">Pincode</label>
+                    <input type="text" id="pincode" class="profile-input" placeholder="190125">
+                    <label for="last-order">Last Order Shipped On</label>
+                    <input type="text" id="last-order" class="profile-input" placeholder="January 10, 2022">
+                    <label for="redeem-card">Redeem Card</label>
+                    <input type="text" id="redeem-card" class="profile-input" placeholder="Enter gift code">
+                    <button class="profile-btn">Update</button>
+                </form>
+            </div>
+            <div class="profile-content profile-subscription-info tabShow">
+                <h1>Subscription Information</h1>
+                <p><strong>Payment Date:</strong> December 10, 2021</p>
+                <p><strong>Date of Next Payment:</strong> December 10, 2022</p>
+                <p><strong>Plan:</strong> Yearly</p>
+                <button class="profile-btn">Update</button>
+            </div>
+            <div class="profile-content profile-privacy-settings tabShow">
+                <h1>Privacy Settings</h1>
+                <p><strong>Manage Email Notifications:</strong></p>
+                <p><strong>Manage Privacy Settings:</strong></p>
+                <p><strong>Terms Of Use:</strong></p>
+                <button class="profile-btn">Update</button>
+            </div>
+            <div class="profile-content profile-account-settings tabShow">
+                <h1>Account Settings</h1>
+                <p><strong>Hold Subscription:</strong></p>
+                <p><strong>Cancel Subscription:</strong></p>
+                <p><strong>Your Devices:</strong></p>
+                <p><strong>Referrals:</strong></p>
+                <button class="profile-btn">Update</button>
+            </div>
+        </div>
+    </div>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../assets/img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Keshav Nagar, Street 32, Pune, 411001</p>
+            <p><strong>Phone:</strong> +91 92222 345 / (+91) 0 123 456 789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../assets/img/pay/app.jpg" alt="">
+                <img src="../assets/img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateway</p>
+            <img src=" ../assets/img/pay/pay.png" alt="">
+            </div>
+            <div class="copyright">
+                <p>Created By Dev Cafè | All Rights Reserved | &#169; 2024</p>
+            </div>
+    </footer>
+
+
+    <script src="../assets/js/profile.js"></script>
+</body>
+</html>
