@@ -210,3 +210,20 @@ input {
 .container.right-panel-active-admin .overlay-right {
     transform: translateX(20%);
 }
+.social-media ul {
+    list-style: none;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-media li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.social-media img {
+    width: 32px; /* Adjust the size as needed */
+    height: 32px;
+}
