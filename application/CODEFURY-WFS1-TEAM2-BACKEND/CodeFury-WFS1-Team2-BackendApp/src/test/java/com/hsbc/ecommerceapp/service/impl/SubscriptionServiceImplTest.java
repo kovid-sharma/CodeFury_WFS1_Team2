@@ -2,11 +2,10 @@ package com.hsbc.ecommerceapp.service.impl;
 
 import com.hsbc.ecommerceapp.model.Product;
 import com.hsbc.ecommerceapp.model.Subscription;
-import com.hsbc.ecommerceapp.storage.OrderStorage;
-import com.hsbc.ecommerceapp.storage.SubscriptionStorage;
+import com.hsbc.ecommerceapp.dao.OrderStorage;
+import com.hsbc.ecommerceapp.dao.SubscriptionStorage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -22,6 +21,7 @@ public class SubscriptionServiceImplTest {
     private SubscriptionServiceImpl subscriptionService;
     private Product product = null;
 
+    // setup before each test
     @BeforeEach
     public void setup() {
         subscriptionStorage = mock(SubscriptionStorage.class);
@@ -30,6 +30,7 @@ public class SubscriptionServiceImplTest {
         product = new Product("Product1", "Apple", "Fresh Apple", 5.0, true);
     }
 
+    // testing add subscription
     @Test
     public void testAddSubscription() {
         Subscription subscription = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);
@@ -39,6 +40,7 @@ public class SubscriptionServiceImplTest {
         verify(subscriptionStorage).addSubscription(subscription);
     }
 
+    // testing update subscription
     @Test
     public void testUpdateSubscription() {
         Subscription subscription = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);
@@ -51,6 +53,7 @@ public class SubscriptionServiceImplTest {
         verify(subscriptionStorage).updateSubscription(subscription);
     }
 
+    // testing cancel subscription
     @Test
     public void testCancelSubscription() {
         Subscription subscription = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);
@@ -62,6 +65,7 @@ public class SubscriptionServiceImplTest {
         verify(subscriptionStorage).cancelSubscription("Subscription1");
     }
 
+    // testing get subscription by id
     @Test
     public void testGetSubscriptionById() {
         Subscription subscription = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);
@@ -74,6 +78,7 @@ public class SubscriptionServiceImplTest {
         assertEquals("Customer1", fetchedSubscription.getCustomerId());
     }
 
+    // testing get all subscription
     @Test
     public void testGetAllSubscriptions() {
         Subscription subscription1 = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);

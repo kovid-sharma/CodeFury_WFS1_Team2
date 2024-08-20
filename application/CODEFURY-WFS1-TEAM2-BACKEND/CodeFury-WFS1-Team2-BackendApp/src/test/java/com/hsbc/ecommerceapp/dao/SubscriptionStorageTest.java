@@ -1,4 +1,4 @@
-package com.hsbc.ecommerceapp.storage;
+package com.hsbc.ecommerceapp.dao;
 
 import com.hsbc.ecommerceapp.model.Subscription;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,11 +13,13 @@ public class SubscriptionStorageTest {
 
     private SubscriptionStorage subscriptionStorage;
 
+    // setup before each test
     @BeforeEach
     public void setup() {
         subscriptionStorage = new SubscriptionStorage();
     }
 
+    // testing add subscription
     @Test
     public void testAddSubscription() {
         Subscription subscription = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);
@@ -28,6 +30,7 @@ public class SubscriptionStorageTest {
         assertEquals("Customer1", fetchedSubscription.getCustomerId());
     }
 
+    // testing update subscription
     @Test
     public void testUpdateSubscription() {
         Subscription subscription = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);
@@ -39,6 +42,7 @@ public class SubscriptionStorageTest {
         assertEquals("Monthly", updatedSubscription.getType());
     }
 
+    // testing cancel subscription
     @Test
     public void testCancelSubscription() {
         Subscription subscription = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);
@@ -49,6 +53,7 @@ public class SubscriptionStorageTest {
         assertFalse(canceledSubscription.isActive());
     }
 
+    // testing get all subscription
     @Test
     public void testGetAllSubscriptions() {
         Subscription subscription1 = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);

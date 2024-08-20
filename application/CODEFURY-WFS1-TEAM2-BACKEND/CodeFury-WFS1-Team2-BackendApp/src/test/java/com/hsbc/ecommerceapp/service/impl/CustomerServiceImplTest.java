@@ -5,7 +5,7 @@ import com.hsbc.ecommerceapp.model.Subscription;
 import com.hsbc.ecommerceapp.model.User;
 import com.hsbc.ecommerceapp.service.CustomerService;
 import com.hsbc.ecommerceapp.service.SubscriptionService;
-import com.hsbc.ecommerceapp.storage.OrderStorage;
+import com.hsbc.ecommerceapp.dao.OrderStorage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -24,6 +24,7 @@ public class CustomerServiceImplTest {
     User user = null;
     Order order = null;
 
+    // setup before each test
     @BeforeEach
     public void setUp() {
         subscriptionService = mock(SubscriptionService.class);
@@ -33,6 +34,7 @@ public class CustomerServiceImplTest {
         order = new Order("Order1", "Customer1", 100.5, "22-08-2024","Delivered");
     }
 
+    // testing place order
     @Test
     public void testPlaceOrder() {
         Subscription subscription = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);
@@ -43,6 +45,7 @@ public class CustomerServiceImplTest {
         verify(orderStorage).addOrder(user.getUser_id(), order);
     }
 
+    // testing cancel order
     @Test
     public void testCancelOrder() {
         customerService.cancelOrder("Order1", order);
@@ -50,6 +53,7 @@ public class CustomerServiceImplTest {
         verify(subscriptionService).cancelSubscription("Subscription1");
     }
 
+    // testing view order
     @Test
     public void testViewOrders() {
         Subscription subscription1 = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);
@@ -63,6 +67,7 @@ public class CustomerServiceImplTest {
         verify(orderStorage).getOrderByCustomerId("Customer1");
     }
 
+    // testing change subscription plan
     @Test
     public void testChangeSubscriptionPlan() {
         Subscription subscription = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);

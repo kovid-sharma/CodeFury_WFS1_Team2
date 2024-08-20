@@ -1,11 +1,9 @@
 package com.hsbc.ecommerceapp.service.impl;
 
-import com.hsbc.ecommerceapp.exceptions.ProductNotFoundException;
 import com.hsbc.ecommerceapp.model.Product;
-import com.hsbc.ecommerceapp.storage.ProductStorage;
+import com.hsbc.ecommerceapp.dao.ProductStorage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import java.util.Arrays;
 import java.util.List;
@@ -18,12 +16,14 @@ public class ProductServiceImplTest {
     private ProductStorage productStorage;
     private ProductServiceImpl productService;
 
+    // setup before each test
     @BeforeEach
     public void setup() {
         productStorage = mock(ProductStorage.class);
         productService = new ProductServiceImpl(productStorage);
     }
 
+    // test add product
     @Test
     public void testAddProduct() {
         Product product = new Product("Product1", "Apple", "Fresh Apple", 5.0, true);
@@ -33,6 +33,7 @@ public class ProductServiceImplTest {
         verify(productStorage).addProduct(product);
     }
 
+    // test update product
     @Test
     public void testUpdateProduct() {
         Product product = new Product("Product1", "Apple", "Fresh Apple", 5.0, true);
@@ -45,6 +46,7 @@ public class ProductServiceImplTest {
         verify(productStorage).updateProduct(product);
     }
 
+    // test delete product
     @Test
     public void testDeleteProduct() {
         Product product = new Product("Product1", "Apple", "Fresh Apple", 5.0, true);
@@ -56,6 +58,7 @@ public class ProductServiceImplTest {
         verify(productStorage).deleteProduct("Product1");
     }
 
+    // testing view all products
     @Test
     public void testViewAllProducts() {
         Product product1 = new Product("Product1", "Apple", "Fresh Apple", 3.0, true);

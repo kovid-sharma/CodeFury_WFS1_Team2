@@ -3,8 +3,8 @@ package com.hsbc.ecommerceapp.service.impl;
 import com.hsbc.ecommerceapp.exceptions.SubscriptionNotFoundException;
 import com.hsbc.ecommerceapp.model.Subscription;
 import com.hsbc.ecommerceapp.service.SubscriptionService;
-import com.hsbc.ecommerceapp.storage.OrderStorage;
-import com.hsbc.ecommerceapp.storage.SubscriptionStorage;
+import com.hsbc.ecommerceapp.dao.OrderStorage;
+import com.hsbc.ecommerceapp.dao.SubscriptionStorage;
 
 import java.util.List;
 
