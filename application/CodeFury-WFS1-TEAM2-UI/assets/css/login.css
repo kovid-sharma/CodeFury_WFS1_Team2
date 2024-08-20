@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -33,35 +33,29 @@ a {
     margin: 15px 0;
 }
 
-
-.btn-grad {background-image: linear-gradient(to right, #6441A5 0%, #2a0845  51%, #6441A5  100%)}
 .btn-grad {
-   margin: 10px;
-   padding: 15px 45px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   border-radius: 10px;
-   display: block;
-   cursor: pointer;
+    background-image: linear-gradient(to right, #FF9A8B 0%, #FF6A6A 51%, #FF9A8B 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
 }
 
 .btn-grad:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center;
     color: #fff;
     text-decoration: none;
 }
 
-#signIn{
-    background-image: linear-gradient(to right, #fff 0%, #f7f3f3  51%, #fff  100%);
-    color: #6441A5;
-}
-
-#signUp{
-    background-image: linear-gradient(to right, #fff 0%, #f7f3f3  51%, #fff  100%);
-    color: #6441A5;
+#signIn, #signUp {
+    background-image: linear-gradient(to right, #ffffff 0%, #FDF2F0 51%, #ffffff 100%);
+    color: #FF6A6A;
 }
 
 form {
@@ -76,37 +70,33 @@ form {
 }
 
 input {
-    background-color: #eee;
+    background-color: #FDF2F0;
     border: none;
     padding: 12px 15px;
     margin: 8px 0;
     width: 100%;
 }
 
-/*  */
-.body-container{
+.body-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #4568DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #FF9A8B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC3A0, #FF9A8B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC3A0, #FF9A8B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .container {
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.08);
     position: relative;
     overflow: hidden;
     width: 768px;
     max-width: 100%;
     min-height: 480px;
 }
-
-/*  */
-
 
 .form-container {
     position: absolute;
@@ -115,24 +105,24 @@ input {
     transition: all 0.6s ease-in-out;
 }
 
-.sign-in-container {
+.sign-in-container, .sign-up-container, .admin-sign-in-container {
     left: 0;
     width: 50%;
     z-index: 2;
 }
 
-.sign-up-container {
-    left: 0;
-    width: 50%;
+.sign-up-container, .admin-sign-in-container {
     opacity: 0;
     z-index: 1;
 }
 
-.container.right-panel-active .sign-in-container {
+.container.right-panel-active .sign-in-container,
+.container.right-panel-active-admin .admin-sign-in-container {
     transform: translateX(100%);
 }
 
-.container.right-panel-active .sign-up-container {
+.container.right-panel-active .sign-up-container,
+.container.right-panel-active-admin .admin-sign-in-container {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
@@ -140,14 +130,11 @@ input {
 }
 
 @keyframes show {
-    0%,
-    49.99% {
+    0%, 49.99% {
         opacity: 0;
         z-index: 1;
     }
-
-    50%,
-    100% {
+    50%, 100% {
         opacity: 1;
         z-index: 5;
     }
@@ -164,14 +151,15 @@ input {
     z-index: 100;
 }
 
-.container.right-panel-active .overlay-container {
+.container.right-panel-active .overlay-container,
+.container.right-panel-active-admin .overlay-container {
     transform: translateX(-100%);
 }
 
 .overlay {
-    background: #6441A5;
-    background: -webkit-linear-gradient(to right, #6441A5, #2a0845);
-    background: linear-gradient(to right, #6441A5, #2a0845);
+    background: #FF6A6A;
+    background: -webkit-linear-gradient(to right, #FF6A6A, #FF9A8B);
+    background: linear-gradient(to right, #FF6A6A, #FF9A8B);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -184,7 +172,8 @@ input {
     transition: transform 0.6s ease-in-out;
 }
 
-.container.right-panel-active .overlay {
+.container.right-panel-active .overlay,
+.container.right-panel-active-admin .overlay {
     transform: translateX(50%);
 }
 
@@ -207,7 +196,8 @@ input {
     transform: translateX(-20%);
 }
 
-.container.right-panel-active .overlay-left {
+.container.right-panel-active .overlay-left,
+.container.right-panel-active-admin .overlay-left {
     transform: translateX(0);
 }
 
@@ -216,48 +206,7 @@ input {
     transform: translateX(0);
 }
 
-.container.right-panel-active .overlay-right {
-    transform: translateX(20%);
-}
-/* Additional styles for the admin sign-in form */
-.admin-sign-in-container {
-    left: 0;
-    width: 50%;
-    opacity: 0;
-    z-index: 1;
-}
-
-.container.right-panel-active-admin .admin-sign-in-container {
-    transform: translateX(100%);
-    opacity: 1;
-    z-index: 5;
-    animation: show 0.6s;
-}
-
-/* Update overlay styles for admin sign-in */
-.container.right-panel-active-admin .overlay-container {
-    transform: translateX(-100%);
-}
-
-.container.right-panel-active-admin .overlay-left {
-    transform: translateX(-20%);
-}
-
+.container.right-panel-active .overlay-right,
 .container.right-panel-active-admin .overlay-right {
     transform: translateX(20%);
-}
-
-/* Additional keyframes */
-@keyframes show {
-    0%,
-    49.99% {
-        opacity: 0;
-        z-index: 1;
-    }
-
-    50%,
-    100% {
-        opacity: 1;
-        z-index: 5;
-    }
 }
