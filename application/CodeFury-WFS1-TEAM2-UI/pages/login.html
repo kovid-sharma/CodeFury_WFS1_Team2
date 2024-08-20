@@ -1,79 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Login & Registration Form</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="../assets/css/login.css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+    <title>Login Page | prathameshkurunkar7</title>
 </head>
 <body>
-  <div class="cont">
-    <div class="form sign-in">
-      <h2>Sign In</h2>
-      <label>
-        <span>Email Address</span>
-        <input type="email" name="email">
-      </label>
-      <label>
-        <span>Password</span>
-        <input type="password" name="password">
-      </label>
-      <button class="submit" type="button">Sign In</button>
-     
-
-      <div class="social-media">
-        <ul>
-            <li><a href="https://www.facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a></li>
-            <li><a href="https://www.x.com" target="_blank"><img src="../assets/images/icons/x.png" alt="X"></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a></li>
-            <li><a href="https://www.linkedin.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn"></a></li>
-        </ul>
-    </div>
-    </div>
-
-    <div class="sub-cont">
-      <div class="img">
-        <div class="img-text m-up">
-          <h1>New here?</h1>
-          <p>sign up and discover</p>
+    <div class="body-container">
+        <div class="container" id="container">
+            <div>
+                <div class="form-container sign-up-container">
+                    <form id="signUpForm">
+                        <h1>Create Account</h1>
+                        <input type="text" placeholder="Name" id="signUpName" />
+                        <input type="email" placeholder="Email" id="signUpEmail" />
+                        <input type="password" placeholder="Password" id="signUpPassword" />
+                        <div class="btn-grad" id="signUpSubmit">Sign Up</div>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form id="signInForm">
+                        <h1>Sign In</h1>
+                        <input type="email" placeholder="Email" id="signInEmail" />
+                        <input type="password" placeholder="Password" id="signInPassword" />
+                        <a href="#">Forgot your password?</a>
+                        <div class="btn-grad" id="signInSubmit">Sign In</div>
+                    </form>
+                </div>
+                <div class="form-container admin-sign-in-container">
+                    <form id="adminSignInForm">
+                        <h1>Admin Sign In</h1>
+                        <input type="text" placeholder="Admin ID" id="adminSignInID" />
+                        <input type="password" placeholder="Password" id="adminSignInPassword" />
+                        <div class="btn-grad" id="adminSignInSubmit">Sign In</div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Welcome Back!</h1>
+                            <p>Start from where you left</p>
+                            <div class="btn-grad" id="signIn">Sign In</div>
+                            <div class="btn-grad" id="adminSignIn">Admin Sign In</div>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello, Buddy!</h1>
+                            <p>Join Us on a new adventure</p>
+                            <div class="btn-grad" id="signUp">Sign Up</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="img-text m-in">
-          <h1>One of us?</h1>
-          <p>just sign in</p>
-        </div>
-        <div class="img-btn">
-          <span class="m-up">Sign Up</span>
-          <span class="m-in">Sign In</span>
-        </div>
-      </div>
-      <div class="form sign-up">
-        <h2>Sign Up</h2>
-        <label>
-          <span>Name</span>
-          <input type="text">
-        </label>
-        <label>
-          <span>Email</span>
-          <input type="email">
-        </label>
-        <label>
-          <span>Password</span>
-          <input type="password">
-        </label>
-        <label>
-          <span>Confirm Password</span>
-          <input type="password">
-        </label>
-        <button type="button" class="submit">Sign Up Now</button>
-      </div>
     </div>
-  </div>
-<script type="text/javascript" src="../assets/js/login.js"></script>
+    <script src="../assets/js/login.js"></script>
 </body>
 </html>
