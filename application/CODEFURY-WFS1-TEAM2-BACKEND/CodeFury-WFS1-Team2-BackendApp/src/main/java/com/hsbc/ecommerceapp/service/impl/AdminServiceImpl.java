@@ -8,7 +8,7 @@ import com.hsbc.ecommerceapp.model.User;
 import com.hsbc.ecommerceapp.service.AdminService;
 import com.hsbc.ecommerceapp.service.ProductService;
 import com.hsbc.ecommerceapp.service.SubscriptionService;
-import com.hsbc.ecommerceapp.storage.SubscriptionStorage;
+import com.hsbc.ecommerceapp.dao.SubscriptionStorage;
 
 import java.util.List;
 

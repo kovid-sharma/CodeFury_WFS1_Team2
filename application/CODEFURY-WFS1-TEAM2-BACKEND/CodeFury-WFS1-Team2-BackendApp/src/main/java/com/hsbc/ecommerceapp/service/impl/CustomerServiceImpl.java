@@ -6,8 +6,8 @@ import com.hsbc.ecommerceapp.model.*;
 import com.hsbc.ecommerceapp.service.CustomerService;
 import com.hsbc.ecommerceapp.service.OrderService;
 import com.hsbc.ecommerceapp.service.SubscriptionService;
-import com.hsbc.ecommerceapp.storage.OrderStorage;
-import com.hsbc.ecommerceapp.storage.UserStorage;
+import com.hsbc.ecommerceapp.dao.OrderStorage;
+import com.hsbc.ecommerceapp.dao.UserStorage;
 
 import java.util.List;
 

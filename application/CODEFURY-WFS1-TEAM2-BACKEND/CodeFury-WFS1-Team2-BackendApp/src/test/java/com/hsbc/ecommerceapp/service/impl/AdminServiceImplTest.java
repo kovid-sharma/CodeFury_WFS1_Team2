@@ -4,10 +4,9 @@ import com.hsbc.ecommerceapp.model.Product;
 import com.hsbc.ecommerceapp.model.User;
 import com.hsbc.ecommerceapp.service.ProductService;
 import com.hsbc.ecommerceapp.service.SubscriptionService;
-import com.hsbc.ecommerceapp.storage.ProductStorage;
+import com.hsbc.ecommerceapp.dao.ProductStorage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import java.util.List;
 
@@ -22,6 +21,7 @@ public class AdminServiceImplTest {
     private SubscriptionService subscriptionService;
     private User user;
 
+    // setup before each test
     @BeforeEach
     public void setup() {
         // Mocking the ProductStorage dependency
@@ -34,6 +34,7 @@ public class AdminServiceImplTest {
         user = user = new User("User1", "john_wick", "password123", "john@wick.com", "customer","22-08-2024");
     }
 
+    // testing add product
     @Test
     public void testAddProduct() {
         // Arrange
@@ -46,6 +47,7 @@ public class AdminServiceImplTest {
         verify(productStorage, times(1)).addProduct(product);
     }
 
+    // testing update product
     @Test
     public void testUpdateProduct() {
         // Arrange
@@ -62,6 +64,7 @@ public class AdminServiceImplTest {
         verify(productStorage, times(1)).updateProduct(product);
     }
 
+    // testing delete product
     @Test
     public void testDeleteProduct() {
         // Arrange
@@ -77,6 +80,7 @@ public class AdminServiceImplTest {
         verify(productStorage, times(1)).deleteProduct("Product1");
     }
 
+    // testing view all products
     @Test
     public void testViewAllProducts() {
         // Arrange

@@ -1,4 +1,4 @@
-package com.hsbc.ecommerceapp.storage;
+package com.hsbc.ecommerceapp.dao;
 
 import com.hsbc.ecommerceapp.model.Order;
 import com.hsbc.ecommerceapp.model.Subscription;
@@ -15,22 +15,23 @@ public class OrderStorageTest {
     private OrderStorage orderStorage;
     private Order order = null;
 
+    // setup before each test
     @BeforeEach
     public void setup() {
         orderStorage = new OrderStorage();
         order = new Order("Order1", "Customer1", 100.5, "22-08-2024","Delivered");
     }
 
+    // testing add order
     @Test
     public void testAddOrder() {
-        Subscription subscription = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);
         orderStorage.addOrder("Customer1", order);
 
         List<Order> orders = orderStorage.getOrderByCustomerId("Customer1");
         assertEquals(1, orders.size());
-        assertEquals(subscription, orders.get(0));
     }
 
+    // testing get order by customer id
     @Test
     public void testGetOrderByCustomerId() {
         Order order1 = new Order("Order1", "Customer1", 100.5, "22-08-2024","Delivered");
@@ -42,6 +43,7 @@ public class OrderStorageTest {
         assertEquals(2, orders.size());
     }
 
+    // testing cancel order
     @Test
     public void testCancelOrder() {
         orderStorage.addOrder("Customer1", order);

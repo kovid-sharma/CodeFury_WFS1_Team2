@@ -1,4 +1,4 @@
-package com.hsbc.ecommerceapp.storage;
+package com.hsbc.ecommerceapp.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,9 +8,12 @@ import java.sql.SQLException;
 public class DatabaseConnection {
     // method for connecting to database
     public static Connection getConnection() {
+        // try catch block to handel exception
         try {
+            // connecting to database
             return DriverManager.getConnection("jdbc:mysql://localhost/hsbcdb", "root", "hksharsh11");
         }
+        // handling exception
         catch (SQLException e) {
             System.out.println(e.getMessage());
         }

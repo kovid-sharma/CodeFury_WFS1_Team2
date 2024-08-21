@@ -1,4 +1,4 @@
-package com.hsbc.ecommerceapp.storage;
+package com.hsbc.ecommerceapp.dao;
 
 import com.hsbc.ecommerceapp.model.Product;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,11 +12,13 @@ public class ProductStorageTest {
 
     private ProductStorage productStorage;
 
+    // setup before each test
     @BeforeEach
     public void setup() {
         productStorage = new ProductStorage();
     }
 
+    // testing add product
     @Test
     public void testAddProduct() {
         Product product = new Product("Product1", "Apple", "Fresh Apple", 5.0, true);
@@ -27,6 +29,7 @@ public class ProductStorageTest {
         assertEquals("Apple", fetchedProduct.getProductName());
     }
 
+    // testing update product
     @Test
     public void testUpdateProduct() {
         Product product = new Product("Product1", "Apple", "Fresh Apple", 5.0, true);
@@ -38,6 +41,7 @@ public class ProductStorageTest {
         assertEquals(5.5, updatedProduct.getPrice());
     }
 
+    // testing delete product
     @Test
     public void testDeleteProduct() {
         Product product = new Product("Product1", "Apple", "Fresh Apple", 5.0, true);
@@ -48,6 +52,7 @@ public class ProductStorageTest {
         assertNull(fetchedProduct);
     }
 
+    // testing get all product
     @Test
     public void testGetAllProducts() {
         Product product1 = new Product("Product1", "Apple", "Fresh Apple", 5.0, true);
