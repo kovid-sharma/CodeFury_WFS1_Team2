@@ -1,17 +1,18 @@
 # CodeFury_WFS1_Team2
 
 
-### Dev-Café: Subscription-Based E-Commerce System
+## Dev-Café: Subscription-Based E-Commerce System
 
 
-**Overview**
+### **Overview**
 
 Welcome to the Dev-Café team's project for the Codefury Hackathon! We have developed a subscription-based e-commerce system.
 
-Project Name: **dev café**
+
+### Project Name: **dev café**
 
 
-Tech Stack Used
+#### Tech Stack Used
 
 
 Frontend: HTML, CSS, JavaScript
@@ -19,7 +20,7 @@ Backend: Java
 
 
 
-Features
+#### Features
 User Registration and Authentication.
 New users can sign up and create an account.
 Existing users can log in to access their account and manage their subscriptions.
@@ -27,21 +28,21 @@ Existing users can log in to access their account and manage their subscriptions
 
 
 
-Product Browsing:
+#### Product Browsing:
 Users can browse through a wide range of products categorized for easy access.
 
 
-Subscription Management:
+#### Subscription Management:
 Users can subscribe to their favorite products with customizable delivery frequencies (weekly, monthly, etc.).
 Option to pause, resume, or cancel subscriptions at any time.
 
 
 
-Order History:
+#### Order History:
 Users can view their past orders and track upcoming deliveries.
 
 
-Project Structure
+#### Project Structure
 Frontend
 HTML/CSS/JavaScript:
 The frontend is developed using vanilla HTML, CSS, and JavaScript to ensure a fast and responsive user interface.
@@ -53,7 +54,7 @@ The backend is built using Java, providing a robust system to handle user data, 
 The backend manages user authentication, subscription logic, and order processing.
 
 
-### Installation and Setup
+## Installation and Setup
 Prerequisites
 Java JDK (version 8 or higher)
 MySQL or any other relational database
@@ -63,19 +64,19 @@ Steps
 Clone the Repository:
 git clone https://github.com/Dev-Café/Codefury-Subscription-Ecommerce.git
 
-Backend Setup:
+#### Backend Setup:
 Navigate to the backend directory.
 Configure the database using commands given in database/ecommerce_db_setup.sql. The name of the db is ecommerce_db
 
 
-Frontend Setup:
+#### Frontend Setup:
 Navigate to the frontend directory.
 Open the index.html file in your web browser to start using the application.
 
 
 
 
-### Run the Application:
+## Run the Application:
 
 Start your web server and access the application through your browser.
 Usage
@@ -86,12 +87,12 @@ Manage Subscriptions: Set your preferred delivery frequency and manage your ongo
 Track Orders: View your order history.
 
 
-Contribution
+## Contribution
 If you have any suggestions, improvements, or bug fixes, feel free to submit a pull request.
 
 
 
 
 
-Acknowledgments
+## Acknowledgments
 Special thanks to the Codefury Hackathon organizers for this amazing opportunity!
