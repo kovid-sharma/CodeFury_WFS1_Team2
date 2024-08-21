@@ -4,12 +4,12 @@
 ## Dev-Café: Subscription-Based E-Commerce System
 
 
-### **Overview**
+## **Overview**
 
 Welcome to the Dev-Café team's project for the Codefury Hackathon! We have developed a subscription-based e-commerce system.
 
 
-### Project Name: **dev café**
+## Project Name: **dev café**
 
 
 #### Tech Stack Used
@@ -20,7 +20,7 @@ Backend: Java
 
 
 
-#### Features
+### Features
 User Registration and Authentication.
 New users can sign up and create an account.
 Existing users can log in to access their account and manage their subscriptions.
@@ -28,21 +28,21 @@ Existing users can log in to access their account and manage their subscriptions
 
 
 
-#### Product Browsing:
+### Product Browsing:
 Users can browse through a wide range of products categorized for easy access.
 
 
-#### Subscription Management:
+### Subscription Management:
 Users can subscribe to their favorite products with customizable delivery frequencies (weekly, monthly, etc.).
 Option to pause, resume, or cancel subscriptions at any time.
 
 
 
-#### Order History:
+### Order History:
 Users can view their past orders and track upcoming deliveries.
 
 
-#### Project Structure
+### Project Structure
 Frontend
 HTML/CSS/JavaScript:
 The frontend is developed using vanilla HTML, CSS, and JavaScript to ensure a fast and responsive user interface.
@@ -64,12 +64,12 @@ Steps
 Clone the Repository:
 git clone https://github.com/Dev-Café/Codefury-Subscription-Ecommerce.git
 
-#### Backend Setup:
+### Backend Setup:
 Navigate to the backend directory.
 Configure the database using commands given in database/ecommerce_db_setup.sql. The name of the db is ecommerce_db
 
 
-#### Frontend Setup:
+### Frontend Setup:
 Navigate to the frontend directory.
 Open the index.html file in your web browser to start using the application.
 
