@@ -2,6 +2,7 @@ package com.hsbc.ecommerceapp.dao;
 
 import com.hsbc.ecommerceapp.exceptions.UserNotFoundException;
 import com.hsbc.ecommerceapp.model.User;
+import com.hsbc.ecommerceapp.util.DatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -2,6 +2,7 @@ package com.hsbc.ecommerceapp.dao;
 
 import com.hsbc.ecommerceapp.model.Order;
 import com.hsbc.ecommerceapp.model.Subscription;
+import com.hsbc.ecommerceapp.service.OrderService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class OrderStorageTest {
 
     private OrderStorage orderStorage;
+    private OrderService orderService;
     private Order order = null;
 
     // setup before each test
@@ -27,7 +29,7 @@ public class OrderStorageTest {
     public void testAddOrder() {
         orderStorage.addOrder("Customer1", order);
 
-        List<Order> orders = orderStorage.getOrderByCustomerId("Customer1");
+        List<Order> orders = orderService.getOrderByCustomerId("Customer1");
         assertEquals(1, orders.size());
     }
 
@@ -49,7 +51,7 @@ public class OrderStorageTest {
         orderStorage.addOrder("Customer1", order);
 
         orderStorage.deleteOrder("Customer1");
-        List<Order> orders = orderStorage.getOrderByCustomerId("Customer1");
+        List<Order> orders = orderService.getOrderByCustomerId("Customer1");
         assertTrue(orders.isEmpty());
     }
 }

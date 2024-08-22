@@ -69,6 +69,6 @@ public class CustomerServiceImpl implements CustomerService {
     // overriding view all orders
     @Override
     public List<Order> viewOrder(String customerId) {
-        return orderStorage.getOrderByCustomerId(customerId);
+        return orderService.getOrderByCustomerId(customerId);
     }
 }

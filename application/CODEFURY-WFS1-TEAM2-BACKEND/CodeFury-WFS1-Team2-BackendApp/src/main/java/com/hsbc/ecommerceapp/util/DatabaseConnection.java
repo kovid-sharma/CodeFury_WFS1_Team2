@@ -1,4 +1,4 @@
-package com.hsbc.ecommerceapp.dao;
+package com.hsbc.ecommerceapp.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

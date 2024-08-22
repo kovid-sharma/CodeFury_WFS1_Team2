@@ -4,6 +4,7 @@ import com.hsbc.ecommerceapp.model.Order;
 import com.hsbc.ecommerceapp.model.Subscription;
 import com.hsbc.ecommerceapp.model.User;
 import com.hsbc.ecommerceapp.service.CustomerService;
+import com.hsbc.ecommerceapp.service.OrderService;
 import com.hsbc.ecommerceapp.service.SubscriptionService;
 import com.hsbc.ecommerceapp.dao.OrderStorage;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,6 +22,7 @@ public class CustomerServiceImplTest {
     private CustomerService customerService;
     private SubscriptionService subscriptionService;
     private OrderStorage orderStorage;
+    private OrderService orderService;
     User user = null;
     Order order = null;
 
@@ -59,12 +61,12 @@ public class CustomerServiceImplTest {
         Subscription subscription1 = new Subscription("Subscription1", "Product1", "Customer1", "Weekly", LocalDate.parse("2024-01-01"), LocalDate.parse("2024-02-01"), true);
         Subscription subscription2 = new Subscription("Subscription2", "Product2", "Customer1", "Bi-Weekly", LocalDate.parse("2024-02-02"), LocalDate.parse("2024-03-02"), true);
 
-        when(orderStorage.getOrderByCustomerId("Customer1")).thenReturn(Arrays.asList(order));
+        when(orderService.getOrderByCustomerId("Customer1")).thenReturn(Arrays.asList(order));
 
         List<Order> orders = customerService.viewOrder("Customer1");
 
         assertEquals(2, orders.size());
-        verify(orderStorage).getOrderByCustomerId("Customer1");
+        verify(orderService).getOrderByCustomerId("Customer1");
     }
 
     // testing change subscription plan

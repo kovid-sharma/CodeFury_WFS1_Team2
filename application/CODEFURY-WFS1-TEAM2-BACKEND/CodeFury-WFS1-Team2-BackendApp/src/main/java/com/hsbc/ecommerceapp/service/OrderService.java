@@ -11,4 +11,5 @@ public interface OrderService {
     void cancelOrder(String customerId, Order order) throws OrderNotFoundException;
     void deleteOrder(String orderId) throws OrderNotFoundException;
     Order getOrderById(String orderId) throws OrderNotFoundException;
+    List<Order> getOrderByCustomerId(String customerId);
 }

@@ -2,6 +2,7 @@ package com.hsbc.ecommerceapp.dao;
 
 import com.hsbc.ecommerceapp.exceptions.SubscriptionNotFoundException;
 import com.hsbc.ecommerceapp.model.Subscription;
+import com.hsbc.ecommerceapp.util.DatabaseConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
