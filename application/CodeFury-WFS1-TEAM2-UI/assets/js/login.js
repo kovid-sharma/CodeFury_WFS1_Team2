@@ -51,25 +51,7 @@ signUpForm.addEventListener('submit', (e) => {
 });
 
 // Sign In form validation
-signInForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const email = document.getElementById('signInEmail').value;
-    const password = document.getElementById('signInPassword').value;
-
-    if (!email || !password) {
-        alert('Please fill in all fields.');
-        return;
-    }
-
-    if (!validateEmail(email)) {
-        alert('Please enter a valid email address.');
-        return;
-    }
-
-    // Perform additional validation or submit the form
-    console.log('Sign In form submitted successfully.');
-});
+    
 
 // Admin Sign In form validation
 adminSignInForm.addEventListener('submit', (e) => {
@@ -77,10 +59,19 @@ adminSignInForm.addEventListener('submit', (e) => {
 
     const adminID = document.getElementById('adminSignInID').value;
     const password = document.getElementById('adminSignInPassword').value;
+    const submitbutton = document.getElementById('adminSignInSubmit');
+
+
 
     if (!adminID || !password) {
         alert('Please fill in all fields.');
         return;
+    }
+
+    if (adminID === "admin" && password === "admin") {
+
+        window.location.href = "../pages/adminSubsc.html";
+
     }
 
     // Perform additional validation or submit the form

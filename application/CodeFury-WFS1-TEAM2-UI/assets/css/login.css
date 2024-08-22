@@ -227,3 +227,7 @@ input {
     width: 32px; /* Adjust the size as needed */
     height: 32px;
 }
+
+.btn-grad{
+    border: 0ch;
+}
