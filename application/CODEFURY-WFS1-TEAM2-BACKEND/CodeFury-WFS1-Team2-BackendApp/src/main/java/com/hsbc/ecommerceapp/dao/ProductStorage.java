@@ -38,6 +38,7 @@ public class ProductStorage {
         }
     }
 
+    // method to update product
     public void updateProduct(Product product) {
         // sql query
         String sql = "UPDATE products SET productName = ?,, productDescription = ?, price = ?, isActive = ? WHERE productId = ?";
@@ -65,6 +66,7 @@ public class ProductStorage {
         }
     }
 
+    // method to delete a product
     public void deleteProduct(String productId) {
         // sql query
         String sql = "DELETE FROM products WHERE productId = ?";
@@ -88,6 +90,7 @@ public class ProductStorage {
         }
     }
 
+    // method to get product by id
     public Product getProductById(String productId) {
         // sql query
         String sql = "SELECT * FROM products WHERE productId = ?";

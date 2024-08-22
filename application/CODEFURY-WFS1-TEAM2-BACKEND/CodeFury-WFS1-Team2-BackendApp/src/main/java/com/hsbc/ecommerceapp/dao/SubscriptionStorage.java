@@ -35,6 +35,7 @@ public class SubscriptionStorage {
         }
     }
 
+    // method to update subscription
     public void updateSubscription(Subscription subscription) {
         // sql query
         String sql = "UPDATE subscriptions SET productId = ?, customerId = ?, startDate = ?, endDate = ?, isActive = ? WHERE subscriptionId = ?";
@@ -62,6 +63,7 @@ public class SubscriptionStorage {
         }
     }
 
+    // method to cancel subscription
     public void cancelSubscription(String subscriptionId) {
 //        Subscription subscription = subscriptionMap.get(subscriptionId);
 //        if(subscription != null)
