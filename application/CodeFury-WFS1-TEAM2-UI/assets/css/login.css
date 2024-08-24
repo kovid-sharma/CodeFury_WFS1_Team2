@@ -53,7 +53,7 @@ a {
     text-decoration: none;
 }
 
-#signIn, #signUp {
+#signIn, #signUp,#signInBack {
     background-image: linear-gradient(to right, #ffffff 0%, #FDF2F0 51%, #ffffff 100%);
     color: #FF6A6A;
 }

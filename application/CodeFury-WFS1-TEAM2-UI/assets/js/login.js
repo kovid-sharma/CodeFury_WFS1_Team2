@@ -6,6 +6,7 @@ const container = document.getElementById('container');
 const signUpForm = document.getElementById('signUpForm');
 const signInForm = document.getElementById('signInForm');
 const adminSignInForm = document.getElementById('adminSignInForm');
+const signInBack= document.getElementById('signInBack');
 
 
 // Add event listeners for panel switching
@@ -16,23 +17,37 @@ signUpBtn.addEventListener('click', () => {
 
 signInBtn.addEventListener('click', () => {
     const email= document.getElementById('signInEmail').value;
+    const pass= document.getElementById('signInPassword').value;
     console.log(email)
-    if(validateEmail(email)){
+    if(validateEmail(email) && pass.length>=8){
         container.classList.remove('right-panel-active');
         container.classList.remove('right-panel-active-admin');
         window.location='../home.html'
     }
-    else{
+   
+    else if(validateEmail(email)==false){
        alert("EMAIL VALIDATION FAILED") 
+    }
+    else{
+        alert("Password length is too small")
     }
 
     
     
 });
 
+
+signInBack.addEventListener('click',()=>{
+  
+    //container.classList.add('right-panel-active')
+    container.classList.remove('right-panel-active');
+    container.classList.remove('right-panel-active-admin');
+   // container.classList.add('left-panel-active');
+});
+
 adminSignInBtn.addEventListener('click', () => {
     container.classList.add('right-panel-active-admin');
-    container.classList.remove('right-panel-active');
+     container.classList.remove('right-panel-active');
 });
 
 // Sign Up form validation
