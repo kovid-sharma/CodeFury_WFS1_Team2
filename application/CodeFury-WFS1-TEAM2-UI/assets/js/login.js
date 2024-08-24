@@ -1,11 +1,12 @@
 // Get DOM elements
 const signUpBtn = document.getElementById('signUp');
-const signInBtn = document.getElementById('signIn');
+const signInBtn = document.getElementById('signInSubmit');
 const adminSignInBtn = document.getElementById('adminSignIn');
 const container = document.getElementById('container');
 const signUpForm = document.getElementById('signUpForm');
 const signInForm = document.getElementById('signInForm');
 const adminSignInForm = document.getElementById('adminSignInForm');
+
 
 // Add event listeners for panel switching
 signUpBtn.addEventListener('click', () => {
@@ -14,8 +15,19 @@ signUpBtn.addEventListener('click', () => {
 });
 
 signInBtn.addEventListener('click', () => {
-    container.classList.remove('right-panel-active');
-    container.classList.remove('right-panel-active-admin');
+    const email= document.getElementById('signInEmail').value;
+    console.log(email)
+    if(validateEmail(email)){
+        container.classList.remove('right-panel-active');
+        container.classList.remove('right-panel-active-admin');
+        window.location='../home.html'
+    }
+    else{
+       alert("EMAIL VALIDATION FAILED") 
+    }
+
+    
+    
 });
 
 adminSignInBtn.addEventListener('click', () => {

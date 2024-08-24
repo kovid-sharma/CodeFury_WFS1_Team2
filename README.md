@@ -71,7 +71,7 @@ Configure the database using commands given in database/ecommerce_db_setup.sql. 
 
 ### Frontend Setup:
 Navigate to the frontend directory.
-Open the index.html file in your web browser to start using the application.
+Open the login.html file in your web browser to start using the application.
 
 
 
