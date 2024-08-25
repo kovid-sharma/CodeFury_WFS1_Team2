@@ -1,9 +1,9 @@
 
--- SQL file to set up the eCommerce database
+-- SQL file to set up the devcafe database
 
 -- 1. Create Database and Use It
-CREATE DATABASE ecommerce_db;
-USE ecommerce_db;
+CREATE DATABASE devcafe_db;
+USE devcafe_db;
 
 -- 2. Create Tables
 CREATE TABLE users (
