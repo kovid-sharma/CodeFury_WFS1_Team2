@@ -34,7 +34,7 @@ a {
 }
 
 .btn-grad {
-    background-image: linear-gradient(to right, #FF9A8B 0%, #FF6A6A 51%, #FF9A8B 100%);
+    background-image: linear-gradient(to right, #8bdaff 0%, #6a6fff 51%, #8bdaff 100%);
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
@@ -54,8 +54,8 @@ a {
 }
 
 #signIn, #signUp,#signInBack {
-    background-image: linear-gradient(to right, #ffffff 0%, #FDF2F0 51%, #ffffff 100%);
-    color: #FF6A6A;
+    background-image: linear-gradient(to right, #8bdaff 0%, #6a6fff 51%, #8bdaff 100%);
+    color: #ffffff;
 }
 
 form {
@@ -83,8 +83,8 @@ input {
     justify-content: center;
     align-items: center;
     background: #FF9A8B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFC3A0, #FF9A8B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFC3A0, #FF9A8B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #000000 0%, #6a6fff 51%, #8bdaff 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8bdaff 0%, #6a6fff 51%, #8bdaff 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container {
@@ -157,9 +157,9 @@ input {
 }
 
 .overlay {
-    background: #FF6A6A;
-    background: -webkit-linear-gradient(to right, #FF6A6A, #FF9A8B);
-    background: linear-gradient(to right, #FF6A6A, #FF9A8B);
+    background: #6adfff;
+    background: -webkit-linear-gradient(to right, #000000 0%, #6a6fff 51%, #8bdaff 100%);
+    background: linear-gradient(to right, #8bdaff 0%, #6a6fff 51%, #8bdaff 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
